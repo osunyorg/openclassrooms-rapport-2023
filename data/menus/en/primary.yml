@@ -1,6 +1,10 @@
 ---
 title: Main menu
 items:
+- title: Our mission
+  target: "/en/our-mission/"
+  kind: page
+  children: []
 - title: Organizations
   target: "/en/organizations/"
   kind: page
