@@ -9,4 +9,8 @@ items:
   target: "/en/organizations/"
   kind: page
   children: []
+- title: Impacting Students
+  target: "/en/impacting-students/"
+  kind: page
+  children: []
 
