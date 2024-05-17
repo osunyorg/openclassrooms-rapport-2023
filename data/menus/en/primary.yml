@@ -9,12 +9,12 @@ items:
   target: "/en/impacting-students/"
   kind: page
   children: []
-- title: Organizations
-  target: "/en/organizations/"
-  kind: page
-  children: []
 - title: Impacting employers
   target: "/en/impacting-employers/"
+  kind: page
+  children: []
+- title: Organizations
+  target: "/en/organizations/"
   kind: page
   children: []
 
