@@ -1,0 +1,85 @@
+
+//Common
+h1 
+  color: #271A38
+  text-transform: uppercase
+h2
+  text-transform: uppercase
+  
+
+//.pages__section
+//  width: columns(3)
+//  padding: $spacing-4 0 $spacing-4 $spacing-4
+
+#main
+  padding-top: 6rem
+  padding-left: 10%
+  padding-right: 10%
+  .document-content
+    .toc-cta
+      display: none !important
+    .blocks
+      .heading.container
+        margin-top: 2rem
+
+//Common - header
+.menu
+   -webkit-flex-basis: 100vw
+    display: none
+    flex-basis: 100vw
+    margin-top: $spacing-3
+    max-height: var(--header-menu-max-height)
+    overflow: auto
+
+.menu 
+    display: none
+    &.is-opened
+        display: block
+    .nav-level-1
+        display: block
+        li 
+            a, span
+                padding: $spacing-1 0
+                display: block
+        > li:not(:last-child) 
+            border-bottom: 1px solid #adb5bd
+        > li
+            > a, > span
+                padding-bottom: $spacing-3
+                padding-top: $spacing-3
+        li.has-children
+            [role="button"]
+                align-items: center
+                display: flex
+                justify-content: space-between
+                text-decoration: none
+                @include icon(caret-bottom, after)
+                    display: block
+                &::after
+                    line-height: 1
+            .dropdown-menu
+                display: none !important
+                padding-top: 0
+            [aria-expanded=true] + .dropdown-menu
+                display: block
+    .dropdown-menu
+        padding-left: 0
+    .is-titled
+        .container
+            padding-left: 0
+            padding-right: 0
+
+header#document-header
+    html.is-scrolling-down:not(.has-menu-opened) &
+        transform: translateY(-100%)
+    
+    html.has-menu-opened &
+        nav
+            padding-bottom: 0
+
+header#document-header
+    nav
+        .header-button
+            display: flex
+            align-items: center
+
