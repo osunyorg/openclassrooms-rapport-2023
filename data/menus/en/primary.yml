@@ -1,6 +1,10 @@
 ---
 title: Main menu
 items:
+- title: Foreword
+  target: "/en/"
+  kind: page
+  children: []
 - title: Our mission
   target: "/en/our-mission/"
   kind: page
@@ -15,10 +19,6 @@ items:
   children: []
 - title: Impacting our planet
   target: "/en/impacting-our-planet/"
-  kind: page
-  children: []
-- title: Foreword
-  target: "/en/"
   kind: page
   children: []
 
