@@ -5,7 +5,7 @@ items:
   target: "/en/our-mission/"
   kind: page
   children: []
-- title: Impacting Students
+- title: Impacting students
   target: "/en/impacting-students/"
   kind: page
   children: []
@@ -13,8 +13,12 @@ items:
   target: "/en/impacting-employers/"
   kind: page
   children: []
-- title: Organizations
-  target: "/en/organizations/"
+- title: Impacting our planet
+  target: "/en/impacting-our-planet/"
+  kind: page
+  children: []
+- title: Foreword
+  target: "/en/"
   kind: page
   children: []
 
