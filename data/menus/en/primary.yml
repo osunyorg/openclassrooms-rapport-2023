@@ -1,10 +1,6 @@
 ---
 title: Main menu
 items:
-- title: 'Our commitment    to progress'
-  target: "/en/our-commitment-to-progress/"
-  kind: page
-  children: []
 - title: Foreword
   target: "/en/"
   kind: page
@@ -23,6 +19,10 @@ items:
   children: []
 - title: Impacting our planet
   target: "/en/impacting-our-planet/"
+  kind: page
+  children: []
+- title: 'Our commitment    to progress'
+  target: "/en/our-commitment-to-progress/"
   kind: page
   children: []
 
