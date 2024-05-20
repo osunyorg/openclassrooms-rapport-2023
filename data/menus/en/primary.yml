@@ -25,4 +25,8 @@ items:
   target: "/en/our-commitment-to-progress/"
   kind: page
   children: []
+- title: Impacting our community
+  target: "/en/impacting-our-community/"
+  kind: page
+  children: []
 
