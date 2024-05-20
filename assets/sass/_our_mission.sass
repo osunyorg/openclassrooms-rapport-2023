@@ -32,6 +32,7 @@
       .block:nth-child(12),
       .heading.container:nth-child(15),
       .block:nth-child(16),
+      .block:nth-child(17),
       .heading.container:nth-child(20)
         grid-column: 1 / 3
       .block:nth-child(3),
@@ -97,7 +98,7 @@
             picture
               margin-right: 4rem
               width: 128px
-              heigth: 128px
+              height: 128px
             dt 
               display: inline-flex
               grid-column: 1 / 3
@@ -147,7 +148,6 @@
         .text
           width: 100%
       .block.block-datatable:nth-child(17)
-        display: none
         .container
           width: 100%
           .top
@@ -161,27 +161,39 @@
               font-weight: 400
               line-height: 140%
           table
-            border-collapse: separate !important
-            border-spacing: 1rem 0rem !important;
-            margin-left: -1rem;
-            margin-right: -1rem;
             thead
               th
-                font-size: 2rem;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 140%;
-                text-transform: uppercase;
-            td, th 
-              width: 50%
-              padding-top: 1.5rem
-              padding-bottom: 1.5rem
-            td 
-              border-collapse: separate !important
-              border-spacing: 1rem !important;
-              border-right: 1px solid white;
+                font-size: 2rem
+                font-style: normal
+                font-weight: 400
+                line-height: 140%
+                text-transform: uppercase
+            tr
+              position: relative
+              td, th 
+                width: 50%
+                padding-top: 1.5rem
+                padding-bottom: 1.5rem
+                border: none
+                &:after
+                  content: ""
+                  border-bottom: 0.0625rem solid #271A38
+                  width: 48%
+                  height: 100%
+                  position: absolute
+                  top: 0
+              td:first-child, th:first-child
+                padding-right: 2%
+                border-right: 0.0625rem solid #271A38
+                &:after
+                  left: 0
+              td:nth-child(2), th:nth-child(2)
+                padding-left: 2%
+                &:after
+                  right: 0
+          
       .block:nth-child(19)
-        padding-top: 50%
+        padding-top: 35%
 
 //1 - By
 //2 - Titre - WHAT DOES IT MEAN TO MAKE EDUCATION ACCESSIBLE?
