@@ -4,7 +4,11 @@ items:
 - title: Foreword
   target: "/en/"
   kind: page
-  children: []
+  children:
+  - title: 'Our commitment      to progress'
+    target: "/en/our-commitment-to-progress/"
+    kind: page
+    children: []
 - title: Our mission
   target: "/en/our-mission/"
   kind: page
