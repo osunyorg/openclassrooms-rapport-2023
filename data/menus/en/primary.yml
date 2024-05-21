@@ -29,4 +29,8 @@ items:
   target: "/en/our-commitment-to-progress/"
   kind: page
   children: []
+- title: Macking Off
+  target: "/en/macking-off/"
+  kind: page
+  children: []
 
