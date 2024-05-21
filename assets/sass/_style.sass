@@ -1,15 +1,12 @@
 
-//Common
+/*** Common ***/
 h1 
   color: #271A38
   text-transform: uppercase
 h2
   text-transform: uppercase
-  
-
-//.pages__section
-//  width: columns(3)
-//  padding: $spacing-4 0 $spacing-4 $spacing-4
+b, strong
+    font-weight: 600
 
 #main
   padding-top: 6rem
@@ -24,7 +21,7 @@ h2
 
 //Common - header
 .menu
-   -webkit-flex-basis: 100vw
+    -webkit-flex-basis: 100vw
     display: none
     flex-basis: 100vw
     margin-top: $spacing-3
@@ -72,7 +69,6 @@ h2
 header#document-header
     html.is-scrolling-down:not(.has-menu-opened) &
         transform: translateY(-100%)
-    
     html.has-menu-opened &
         nav
             padding-bottom: 0
@@ -82,4 +78,6 @@ header#document-header
         .header-button
             display: flex
             align-items: center
+        .logo img
+         max-width: 12rem
 
