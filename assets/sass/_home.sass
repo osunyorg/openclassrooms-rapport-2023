@@ -53,14 +53,17 @@
       .block:nth-child(9),
       .block:nth-child(10),
       .block:nth-child(15),
-      .block:nth-child(17)
+      .block:nth-child(17),
+      .block:nth-child(18)
         grid-column: 1
       .block:nth-child(7),
       .block:nth-child(9),
       .block:nth-child(11),
       .block:nth-child(16),
-      .block:nth-child(18)
+      .block:nth-child(19)
         grid-column: 2
+      .block:nth-child(16)
+        grid-row: 12 / 14
 
       .heading.container:first-child,
       .block:nth-child(2),
@@ -169,30 +172,18 @@
             line-height: 160%
       .block:nth-child(15)
         color: #F2E93F
-        position: relative
-        .rich-text p
-          font-size: 2rem
-          font-weight: 400
-          line-height: 140%
-          text-transform: uppercase
+        .text
+          width: 100%
+          .rich-text p
+            font-size: 2rem
+            font-weight: 400
+            line-height: 140%
+            text-transform: uppercase
         .notes 
           p
             line-height: 160%
             font-size: 1.375rem
             font-weight: 400
-        &:after
-          background-image: url('/assets/images/cloud.svg')
-          content: ""
-          z-index: 0
-          position: absolute
-          pointer-events: none
-          background-size: 100%
-          background-repeat: no-repeat
-          background-attachment: scroll
-          width: 125%
-          height: calc(214px* 1.25)
-          margin-top: 5rem
-          left: -25%
       .block:nth-child(16)
         z-index: 2
         margin-top: 50%
@@ -208,14 +199,22 @@
           font-weight: 400
           b 
             font-weight: 600
-      .block:nth-child(18)
+      .block:nth-child(17)
+        margin-left: -25%
+        margin-bottom: 0px
+        padding-bottom: 0px
+        figure
+          a.glightbox
+            width: 100%
+            margin: 0px
+      .block:nth-child(19)
         color: #F2E93F
         p
           font-size: 3rem
           font-weight: 400
           line-height: 130%
-      .block:nth-child(17),
-      .block:nth-child(18)
+      .block:nth-child(18),
+      .block:nth-child(19)
         align-content: end
 
 
