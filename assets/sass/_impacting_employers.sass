@@ -40,10 +40,12 @@
       .block:nth-child(3),
       .block:nth-child(6),
       .block:nth-child(9),
+      .block:nth-child(11),
       .block:nth-child(13),
       .block:nth-child(15)
         grid-column: 1
       .block:nth-child(4),
+      .block:nth-child(7),
       .block:nth-child(10),
       .block:nth-child(14)
         grid-column: 2
@@ -96,8 +98,10 @@
       .heading.container:nth-child(16)
         h2
           color: #5A9460
+      .block:nth-child(10)
+        grid-row: 7 / 9
       .block:nth-child(14)
-        grid-row: 9 / 11
+        grid-row: 10 / 12
         align-self: end
       .block:nth-child(15)
         display: flex
@@ -155,7 +159,7 @@
         border-top: 0.0625rem solid #271A38
         padding-bottom: 24rem
         &:after
-          background-image: url('/assets/images/computer.svg');
+          background-image: url('/assets/images/computer.svg')
           content: ""
           z-index: 2
           position: absolute
