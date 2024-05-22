@@ -59,10 +59,13 @@
       .block:nth-child(13)
         .text
           width: 100%
+      .block:first-child
+        margin-bottom: 4rem
       .heading.container:nth-child(2),
       .heading.container:nth-child(6),
       .heading.container:nth-child(9),
       .heading.container:nth-child(12)
+        margin-bottom: 3rem
         h2
           width: 100%
           border-top: 0.0625rem solid #271A38
@@ -73,11 +76,11 @@
       .block:nth-child(4)
         grid-row: 3 / 5
       .block:nth-child(5)
+        margin-bottom: 5rem
         display: flex
         ul
           display: block
           dl
-            display: inline-flex
             display: grid
             grid-template-columns: calc(128px + 4rem) repeat(2, 1fr)
             grid-template-rows: repeat(3, 1fr)
@@ -101,8 +104,12 @@
               grid-row: 2 / 4
       .block:nth-child(8)
         margin-top: 40%
+        margin-bottom: 6rem
       .block:nth-child(11)
         margin-top: 25%
+        margin-bottom: 6rem
+      .block:nth-child(13)
+        padding-bottom: 12rem
 
 //1 - While our annual Mission report is a source of pride
 //2 - Titre - Improve our insights into our impact on free users
