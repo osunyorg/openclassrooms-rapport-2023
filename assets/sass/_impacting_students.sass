@@ -4,10 +4,13 @@
   color: #271A38
   h1
     color: #271A38
+    margin-top: 4rem
   h2
     color: #FFFFFF
   header.hero
     background: none
+    margin-bottom: 4rem
+    padding-bottom: 0
     .container
       .content
         display: flex
@@ -86,6 +89,8 @@
       .block:nth-child(22)
         .text
           width: 100%
+      .block:first-child
+        margin-bottom: 3rem
       .heading.container:nth-child(2),
       .heading.container:nth-child(12),
       .heading.container:nth-child(17),
@@ -101,7 +106,8 @@
           text-transform: uppercase
       .block:nth-child(4),
       .block:nth-child(14)
-        margin-top: 40%
+        margin-top: 50%
+        margin-bottom: 6rem
         .notes *
           font-size: 1.375rem
           font-weight: 400
@@ -164,6 +170,9 @@
       .block:nth-child(28)
         .block-content
           border-bottom: 0.0625rem solid #271A38
+      .block:nth-child(8),
+      .block:nth-child(9)
+        margin-top: 4rem
       .block:nth-child(9)
         .rich-text
           font-size: 1rem
@@ -173,19 +182,28 @@
             font-weight: 400
             text-decoration: underline
       .block:nth-child(10)
+        margin-top: 6rem
         margin-bottom: 0px !important
         .chapter
           display: block
-          h3.block-title
-            font-size: 2rem
-            font-weight: 400
-            line-height: 120%
-            text-decoration-line: underline
-            text-transform: uppercase
+          .top
+            margin-bottom: 1rem
+            h3.block-title
+              margin-bottom: 1rem !important
+              font-size: 2rem
+              font-weight: 400
+              line-height: 120%
+              text-decoration-line: underline
+              text-transform: uppercase
           .text
             width: 100%
+            p
+              margin-top: 1rem
+          figure 
+            margin-top: 4rem
       .block:nth-child(11)
-        align-self: center
+        margin-bottom: 40%
+        align-self: end
       .heading.container:nth-child(12),
       .heading.container:nth-child(17),
       .heading.container:nth-child(21)
@@ -197,8 +215,8 @@
         .block-content
           border-top: 0.0625rem solid #271A38
           border-bottom: 0.0625rem solid #271A38
-          padding-top: 2.7rem
-          padding-bottom: 2.7rem
+          padding-top: 3rem
+          padding-bottom: 3rem
           text-align: center
           .text
             width: 100%
@@ -242,6 +260,8 @@
         figure
           width: 100%
       .block:nth-child(16)
+        margin-top: 4rem
+        margin-bottom: 4rem
         figure
           flex-direction: column
           align-items: center
@@ -257,6 +277,10 @@
             line-height: 140%
             text-transform: uppercase
             margin-bottom: 2rem
+      .block:nth-child(19),
+      .block:nth-child(20)
+        margin-top: 3rem
+        margin-bottom: 4rem
       .block:nth-child(20)
         display: flex
         ul
@@ -287,6 +311,7 @@
         font-size: 2rem
         font-weight: 400
         line-height: 160%
+        margin-bottom: 7rem
       .block:nth-child(29),
       .block:nth-child(30)
         .chapter
@@ -295,6 +320,9 @@
             text-align: center
             padding-right: 3rem
             padding-left: 3rem
+      .block:nth-child(30)
+        margin-top: 6rem
+        margin-bottom: 6rem
       .block:nth-child(30),
       .block:nth-child(31)
         .rich-text
@@ -306,7 +334,7 @@
       .block:nth-child(32),
       .block:nth-child(33)
         border-top: 0.0625rem solid #271A38
-        padding-top: 2.7rem
+        padding-top: 3rem
       .block:nth-child(31)
         border-right: 0.0625rem solid #271A38
         border-bottom: 0.0625rem solid #271A38
@@ -348,13 +376,15 @@
               font-weight: 400
               line-height: 120%
               min-width: auto !important
+            dd
+              margin-top: 0
       .block:nth-child(33)
         margin-left: calc(50% - (var(--grid-gutter) / 2))
       .block:nth-child(34)
         border-top: 0.0625rem solid #271A38
         border-bottom: 0.0625rem solid #271A38
-        padding-top: 1.7rem
-        padding-bottom: 1.7rem
+        padding-top: 3rem
+        padding-bottom: 3rem
         margin-right: var(--grid-gutter)
         .block-content
           text-align: center
@@ -366,6 +396,7 @@
               font-weight: 400
       .block:nth-child(35)
         margin-top: 0px
+        margin-bottom: 6rem
         .container
           .block-content
             border-bottom: 0.0625rem solid #271A38
@@ -453,6 +484,19 @@
     .block:nth-child(39)
       border-top: 0.0625rem solid #271A38
       padding-bottom: 12rem
+      &:after
+        background-image: url('/assets/images/testi_fanny.svg')
+        content: ""
+        z-index: 2
+        position: absolute
+        pointer-events: none
+        background-size: 100%
+        background-repeat: no-repeat
+        background-attachment: scroll
+        width: 384px
+        height: 519px
+        bottom: 0px
+        right: -12.5%
     
 //1 - Having a positive impact on our students' lives
 //2 - Titre - Breaking barriers to education
