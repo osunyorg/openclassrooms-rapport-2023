@@ -53,7 +53,6 @@
       .heading.container:nth-child(8),
       .heading.container:nth-child(12),
       .heading.container:nth-child(16)
-        margin-bottom: 0px
         h2
           width: 100%
           font-size: 4rem
@@ -74,15 +73,19 @@
         .text
           width: 100%
       .block:nth-child(5)
+        margin-top: 6rem
         ul
           border-top: 0.0625rem solid #000
           border-bottom: 0.0625rem solid #000
+          grid-gap: 0
           li
-            padding-right: 2rem
-            padding-top: 2.7rem
-            padding-bottom: 2.7rem
+            padding-top: 4rem
+            padding-bottom: 4rem
             &:not(:last-child)
+              padding-right: 4rem
               border-right: 0.0625rem solid #000
+            &:not(:first-child)
+              padding-left: 4rem
         dl
           img
             margin: 0px auto 3rem auto
@@ -93,14 +96,15 @@
             line-height: 120%
           dd 
             text-align: center
+            margin-top: 0px
+      .block:nth-child(6)
+        margin-bottom: 6rem
       .block:nth-child(7)
-        margin-left: 45%
-        margin-right: -25%
-        align-self: center
-        figure
-          a.glightbox
-            width: 100%
-            margin: 0px
+        .block-content
+          position: relative
+          figure
+            position: absolute
+            right: -36%
       .heading.container:nth-child(8),
       .heading.container:nth-child(12),
       .heading.container:nth-child(16)
@@ -108,6 +112,10 @@
           color: #5A9460
       .block:nth-child(10)
         grid-row: 7 / 9
+        .rich-text p
+          margin-top: 0.7rem
+        .notes
+          margin-top: 3rem
       .block:nth-child(11)
         margin-left: -25%
         margin-bottom: 0px
@@ -116,6 +124,8 @@
           a.glightbox
             width: 100%
             margin: 0px
+      .block:nth-child(13)
+        margin-bottom: 6rem
       .block:nth-child(14)
         grid-row: 10 / 12
         align-self: end
@@ -148,6 +158,8 @@
               line-height: 160%
               grid-column: 2 / 4
               grid-row: 2 / 4
+      .heading.container:nth-child(16)
+        margin-bottom: 0px
       .block:nth-child(17),
       .block:nth-child(18)
         margin: auto
