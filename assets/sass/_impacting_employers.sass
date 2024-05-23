@@ -31,28 +31,27 @@
       .heading.container:first-child,
       .block:nth-child(2),
       .block:nth-child(5),
-      .heading.container:nth-child(8),
-      .heading.container:nth-child(12),
-      .heading.container:nth-child(16),
-      .block:nth-child(17),
-      .block:nth-child(18)
+      .heading.container:nth-child(7),
+      .heading.container:nth-child(11),
+      .heading.container:nth-child(15),
+      .block:nth-child(16),
+      .block:nth-child(17)
         grid-column: 1 / 3
       .block:nth-child(3),
       .block:nth-child(6),
-      .block:nth-child(9),
-      .block:nth-child(11),
-      .block:nth-child(13),
-      .block:nth-child(15)
+      .block:nth-child(8),
+      .block:nth-child(10),
+      .block:nth-child(12),
+      .block:nth-child(14)
         grid-column: 1
       .block:nth-child(4),
-      .block:nth-child(7),
-      .block:nth-child(10),
-      .block:nth-child(14)
+      .block:nth-child(9),
+      .block:nth-child(13)
         grid-column: 2
       .heading.container:first-child,
-      .heading.container:nth-child(8),
-      .heading.container:nth-child(12),
-      .heading.container:nth-child(16)
+      .heading.container:nth-child(7),
+      .heading.container:nth-child(11),
+      .heading.container:nth-child(15)
         h2
           width: 100%
           font-size: 4rem
@@ -64,8 +63,8 @@
           padding-bottom: 2.7rem
           text-transform: uppercase
       .block:nth-child(2),
-      .block:nth-child(9),
-      .block:nth-child(13)
+      .block:nth-child(8),
+      .block:nth-child(12)
         font-size: 2rem
         font-weight: 230
         line-height: 160%
@@ -98,25 +97,32 @@
             text-align: center
             margin-top: 0px
       .block:nth-child(6)
-        margin-bottom: 6rem
-      .block:nth-child(7)
-        .block-content
-          position: relative
-          figure
-            position: absolute
-            right: -36%
-      .heading.container:nth-child(8),
-      .heading.container:nth-child(12),
-      .heading.container:nth-child(16)
+        padding-bottom: 6rem
+        &:after
+          background-image: url(/assets/images/right_white_cloud.svg)
+          content: ""
+          z-index: 2
+          position: absolute
+          pointer-events: none
+          background-size: 100%
+          background-repeat: no-repeat
+          background-attachment: scroll
+          width: 480px
+          height: 152px
+          right: -12.5%
+          margin-top: -9%
+      .heading.container:nth-child(7),
+      .heading.container:nth-child(11),
+      .heading.container:nth-child(15)
         h2
           color: #5A9460
-      .block:nth-child(10)
+      .block:nth-child(9)
         grid-row: 7 / 9
         .rich-text p
           margin-top: 0.7rem
         .notes
           margin-top: 3rem
-      .block:nth-child(11)
+      .block:nth-child(10)
         margin-left: calc(-25% - var(--grid-gutter))
         margin-bottom: 0px
         padding-bottom: 0px
@@ -124,12 +130,12 @@
           a.glightbox
             width: 100%
             margin: 0px
-      .block:nth-child(13)
+      .block:nth-child(12)
         margin-bottom: 6rem
-      .block:nth-child(14)
+      .block:nth-child(13)
         grid-row: 10 / 12
         align-self: end
-      .block:nth-child(15)
+      .block:nth-child(14)
         display: flex
         ul
           display: block
@@ -158,10 +164,10 @@
               line-height: 160%
               grid-column: 2 / 4
               grid-row: 2 / 4
-      .heading.container:nth-child(16)
+      .heading.container:nth-child(15)
         margin-bottom: 0px
-      .block:nth-child(17),
-      .block:nth-child(18)
+      .block:nth-child(16),
+      .block:nth-child(17)
         margin: auto
         width: 70%
         border-left: 0.0625rem solid #271A38
@@ -183,7 +189,7 @@
               font-weight: 230
               line-height: 160%
               font-size: 2rem
-      .block:nth-child(18)
+      .block:nth-child(17)
         border-top: 0.0625rem solid #271A38
         padding-bottom: 24rem
         &:after
@@ -206,15 +212,14 @@
 //4 - In early 2023
 //5 - 30 % 55%
 //6 - This data provided us with meaningful insights
-//7 - Image - Right White Cloud
-//8 - Titre - Easy access to a rich talent pool
-//9 - In recent years
-//10 - While the apprenticeship model itself
-//11 - Image White Cloud
-//12 - Titre - Easy and quick access to the right skills
-//13 - Offering an easy and straightforward access
-//14 - In that perspective, OpenClassrooms advocates
-//15 - 84%
-//16 - Titre - Testimony
-//17 - Testimony 1
-//18 - Testimony 2
+//7 - Titre - Easy access to a rich talent pool
+//8 - In recent years
+//9 - While the apprenticeship model itself
+//10 - Image White Cloud
+//11 - Titre - Easy and quick access to the right skills
+//12 - Offering an easy and straightforward access
+//13 - In that perspective, OpenClassrooms advocates
+//14 - 84%
+//15 - Titre - Testimony
+//16 - Testimony 1
+//17 - Testimony 2
