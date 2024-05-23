@@ -32,26 +32,26 @@
       .block:nth-child(2),
       .block:nth-child(5),
       .heading.container:nth-child(7),
-      .heading.container:nth-child(11),
-      .heading.container:nth-child(15),
-      .block:nth-child(16),
-      .block:nth-child(17)
+      .heading.container:nth-child(10),
+      .heading.container:nth-child(14),
+      .block:nth-child(15),
+      .block:nth-child(16)
         grid-column: 1 / 3
       .block:nth-child(3),
       .block:nth-child(6),
       .block:nth-child(8),
-      .block:nth-child(10),
-      .block:nth-child(12),
-      .block:nth-child(14)
+      .block:nth-child(9),
+      .block:nth-child(11),
+      .block:nth-child(13)
         grid-column: 1
       .block:nth-child(4),
       .block:nth-child(9),
-      .block:nth-child(13)
+      .block:nth-child(12)
         grid-column: 2
       .heading.container:first-child,
       .heading.container:nth-child(7),
-      .heading.container:nth-child(11),
-      .heading.container:nth-child(15)
+      .heading.container:nth-child(10),
+      .heading.container:nth-child(14)
         h2
           width: 100%
           font-size: 4rem
@@ -64,7 +64,7 @@
           text-transform: uppercase
       .block:nth-child(2),
       .block:nth-child(8),
-      .block:nth-child(12)
+      .block:nth-child(11)
         font-size: 2rem
         font-weight: 230
         line-height: 160%
@@ -101,7 +101,6 @@
         &:after
           background-image: url(/assets/images/right_white_cloud.svg)
           content: ""
-          z-index: 2
           position: absolute
           pointer-events: none
           background-size: 100%
@@ -112,30 +111,34 @@
           right: -12.5%
           margin-top: -9%
       .heading.container:nth-child(7),
-      .heading.container:nth-child(11),
-      .heading.container:nth-child(15)
+      .heading.container:nth-child(10),
+      .heading.container:nth-child(14)
         h2
           color: #5A9460
+      .block:nth-child(8)
+        &:after
+          content: ""
+          background-image: url(/assets/images/left_white_cloud.svg)
+          position: absolute
+          pointer-events: none
+          background-size: 100%
+          background-repeat: no-repeat
+          width: 704px
+          height: 185px
+          left: -12.5%
+          margin-top: 9%
       .block:nth-child(9)
         grid-row: 7 / 9
         .rich-text p
           margin-top: 0.7rem
         .notes
           margin-top: 3rem
-      .block:nth-child(10)
-        margin-left: calc(-25% - var(--grid-gutter))
-        margin-bottom: 0px
-        padding-bottom: 0px
-        figure
-          a.glightbox
-            width: 100%
-            margin: 0px
-      .block:nth-child(12)
+      .block:nth-child(11)
         margin-bottom: 6rem
-      .block:nth-child(13)
+      .block:nth-child(12)
         grid-row: 10 / 12
         align-self: end
-      .block:nth-child(14)
+      .block:nth-child(13)
         display: flex
         ul
           display: block
@@ -164,10 +167,10 @@
               line-height: 160%
               grid-column: 2 / 4
               grid-row: 2 / 4
-      .heading.container:nth-child(15)
+      .heading.container:nth-child(14)
         margin-bottom: 0px
-      .block:nth-child(16),
-      .block:nth-child(17)
+      .block:nth-child(15),
+      .block:nth-child(16)
         margin: auto
         width: 70%
         border-left: 0.0625rem solid #271A38
@@ -189,7 +192,7 @@
               font-weight: 230
               line-height: 160%
               font-size: 2rem
-      .block:nth-child(17)
+      .block:nth-child(16)
         border-top: 0.0625rem solid #271A38
         padding-bottom: 24rem
         &:after
@@ -215,11 +218,10 @@
 //7 - Titre - Easy access to a rich talent pool
 //8 - In recent years
 //9 - While the apprenticeship model itself
-//10 - Image White Cloud
-//11 - Titre - Easy and quick access to the right skills
-//12 - Offering an easy and straightforward access
-//13 - In that perspective, OpenClassrooms advocates
-//14 - 84%
-//15 - Titre - Testimony
-//16 - Testimony 1
-//17 - Testimony 2
+//10 - Titre - Easy and quick access to the right skills
+//11 - Offering an easy and straightforward access
+//12 - In that perspective, OpenClassrooms advocates
+//13 - 84%
+//14 - Titre - Testimony
+//15 - Testimony 1
+//16 - Testimony 2
