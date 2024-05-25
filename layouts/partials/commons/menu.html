@@ -1,6 +1,5 @@
 {{ $kind := .kind }}
 {{ if and ($kind) (eq $kind "primary") }}
-  Attend primary
   {{- partial "commons/ocr_menu_content.html" -}}
 {{ else }}
   {{ $items := .items }}

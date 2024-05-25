@@ -32,6 +32,29 @@ b, strong
     &.is-opened
         display: block
     .nav-level-1
+        li.has-children
+            [role="button"]
+                align-items: center
+                display: flex
+                justify-content: space-between
+                text-decoration: none
+                @include icon(caret-bottom, after)
+                    display: block
+                &::after
+                    line-height: 1
+            .dropdown-menu
+                display: none !important
+                padding-top: 0
+            [aria-expanded=true] + .dropdown-menu
+                display: block
+    .dropdown-menu
+        padding-left: 0
+    .is-titled
+        .container
+            padding-left: 0
+            padding-right: 0
+.menu, #document-footer
+    .nav-level-1
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 4rem
@@ -75,27 +98,52 @@ b, strong
             > a, > span
                 padding-bottom: $spacing-3
                 padding-top: $spacing-3
-        li.has-children
-            [role="button"]
-                align-items: center
-                display: flex
-                justify-content: space-between
-                text-decoration: none
-                @include icon(caret-bottom, after)
-                    display: block
-                &::after
-                    line-height: 1
-            .dropdown-menu
-                display: none !important
-                padding-top: 0
-            [aria-expanded=true] + .dropdown-menu
+
+.menu, #document-footer
+    .nav-level-1
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 4rem
+        justify-content: center
+        > li.menu-block 
+            width: 100%
+            max-width: 256px
+            height: 256px
+            margin: auto
+            border-bottom: none !important
+            > a
+                padding: 0
                 display: block
-    .dropdown-menu
-        padding-left: 0
-    .is-titled
-        .container
-            padding-left: 0
-            padding-right: 0
+                text-decoration: none
+            .menu-block-content
+                width: 100%
+                height: 100%
+                .menu-block-title
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding-left: 1rem
+                    padding-right: 1rem
+                    width: 100%
+                    height: 120px
+                    text-align: center
+                    color: #271A38
+                    text-transform: uppercase
+                    line-height: 140%
+                    word-wrap: break-word
+                    border-top: 0.0625rem solid #271A38
+                img
+                    width: 100%
+                    height: 100%
+                    max-height: 136px
+                    max-width: 256px
+                    display: flex
+        > li:not(:last-child) 
+            border-bottom: 1px solid #adb5bd
+        > li
+            > a, > span
+                padding-bottom: $spacing-3
+                padding-top: $spacing-3
 
 header#document-header
     html.is-scrolling-down:not(.has-menu-opened) &
@@ -112,3 +160,6 @@ header#document-header
         .logo img
          max-width: 12rem
 
+#document-footer
+    padding-left: 4rem
+    padding-right: 4rem
