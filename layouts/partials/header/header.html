@@ -4,11 +4,15 @@
   <nav aria-label="{{ i18n "commons.menu.main" }}">
     <div class="container">
       {{ partial "header/logo.html" }}
-      {{ if (site.Params.menu.i18n.display) }}
-        {{ partial "header/i18n.html" . }}
-      {{ end }}
+      <div class="header-right-block">
+        {{ if (site.Params.menu.i18n.display) }}
+          {{ partial "header/i18n.html" . }}
+        {{ end }}
+        {{ if $primary.items }}
+          {{ partial "header/button.html" }}
+        {{ end }}
+      </div>
       {{ if $primary.items }}
-        {{ partial "header/button.html" }}
         <div class="menu" id="navigation">
           {{ partial "commons/menu.html"
               (dict

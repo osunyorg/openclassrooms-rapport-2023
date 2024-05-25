@@ -15,7 +15,7 @@
     </a>
   </li>
   <li class="menu-block menu-our-mission">
-    <a href="/our-mission">
+    <a href="/{{ site.Language }}/our-mission">
       <div class="menu-block-content" style="background: #EDB3B2">
         <img src="/assets/images/menu_our_mission.svg" />
         <div class="menu-block-title">Our mission</div>
@@ -23,7 +23,7 @@
     </a>
   </li>
   <li class="menu-block menu-impacting-students">
-    <a href="/impacting-students">
+    <a href="/{{ site.Language }}/impacting-students">
       <div class="menu-block-content" style="background: #FF7B6D">
         <img src="/assets/images/menu_impacting_students.svg" />
         <div class="menu-block-title">Impacting students</div>
@@ -31,7 +31,7 @@
     </a>
   </li>
   <li class="menu-block menu-impacting-employers">
-    <a href="/impacting-employers">
+    <a href="/{{ site.Language }}/impacting-employers">
       <div class="menu-block-content" style="background: #5F9760">
         <img src="/assets/images/menu_impacting_employers.svg" />
         <div class="menu-block-title">Impacting employers</div>
@@ -39,7 +39,7 @@
     </a>
   </li>
   <li class="menu-block menu-impacting-community">
-    <a href="/impacting-our-community"> 
+    <a href="/{{ site.Language }}/impacting-our-community"> 
       <div class="menu-block-content" style="background: #EDB5B0">
         <img src="/assets/images/menu_impacting_community.svg" />
         <div class="menu-block-title">Impacting our community</div>
@@ -47,7 +47,7 @@
     </a>
   </li>
   <li class="menu-block menu-impacting-planet">
-    <a href="/impacting-our-planet">
+    <a href="/{{ site.Language }}/impacting-our-planet">
       <div class="menu-block-content" style="background: #8C79E8">
         <img src="/assets/images/menu_impacting_planet.svg" />
         <div class="menu-block-title">Impacting our planet</div>
@@ -55,7 +55,7 @@
     </a>
   </li>
   <li class="menu-block menu-commitment-progress">
-    <a href="/our-commitment-to-progress">
+    <a href="/{{ site.Language }}/our-commitment-to-progress">
       <div class="menu-block-content" style="background: #F9AB2D">
         <img src="/assets/images/menu_commitment_progress.svg" />
         <div class="menu-block-title">Our commitment to progress</div>
@@ -63,10 +63,16 @@
     </a>
   </li>
   <li class="menu-block menu-making-off">
-    <a href="/making-off/">
+    <a href="/{{ site.Language }}/making-off/">
       <div class="menu-block-content" style="background: #9CC7F2">
         <img src="/assets/images/menu_making_off.svg" />
-        <div class="menu-block-title">Making off</div>
+        <div class="menu-block-title">
+          {{ if (eq site.Language "en") }}
+            Making off
+          {{ else }}
+            FR - Making off
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
