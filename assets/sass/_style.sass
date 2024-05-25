@@ -1,4 +1,3 @@
-
 /*** Common ***/
 h1 
   color: #271A38
@@ -33,11 +32,43 @@ b, strong
     &.is-opened
         display: block
     .nav-level-1
-        display: block
-        li 
-            a, span
-                padding: $spacing-1 0
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        gap: 4rem
+        justify-content: center
+        > li.menu-block 
+            width: 100%
+            max-width: 256px
+            height: 256px
+            margin: auto
+            border-bottom: none !important
+            > a
+                padding: 0
                 display: block
+                text-decoration: none
+            .menu-block-content
+                width: 100%
+                height: 100%
+                .menu-block-title
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    padding-left: 1rem
+                    padding-right: 1rem
+                    width: 100%
+                    height: 120px
+                    text-align: center
+                    color: #271A38
+                    text-transform: uppercase
+                    line-height: 140%
+                    word-wrap: break-word
+                    border-top: 0.0625rem solid #271A38
+                img
+                    width: 100%
+                    height: 100%
+                    max-height: 136px
+                    max-width: 256px
+                    display: flex
         > li:not(:last-child) 
             border-bottom: 1px solid #adb5bd
         > li
@@ -71,7 +102,7 @@ header#document-header
         transform: translateY(-100%)
     html.has-menu-opened &
         nav
-            padding-bottom: 0
+            height: 100vh
 
 header#document-header
     nav
