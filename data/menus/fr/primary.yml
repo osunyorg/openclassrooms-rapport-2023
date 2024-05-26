@@ -1,8 +1,36 @@
 ---
 title: Menu principal
 items:
-- title: Équipe
-  target: "/fr/equipe/"
+- title: Accueil
+  target: "/fr/"
+  kind: page
+  children: []
+- title: Our mission
+  target: "/fr/our-mission/"
+  kind: page
+  children: []
+- title: Impacting students
+  target: "/fr/impacting-students/"
+  kind: page
+  children: []
+- title: Impacting employers
+  target: "/fr/impacting-employers/"
+  kind: page
+  children: []
+- title: Impacting our community
+  target: "/fr/impacting-our-community/"
+  kind: page
+  children: []
+- title: Impacting our planet
+  target: "/fr/impacting-our-planet/"
+  kind: page
+  children: []
+- title: Our commitment to progress
+  target: "/fr/our-commitment-to-progress/"
+  kind: page
+  children: []
+- title: Making Off
+  target: "/fr/making-off/"
   kind: page
   children: []
 
