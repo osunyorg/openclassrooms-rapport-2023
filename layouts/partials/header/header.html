@@ -21,6 +21,22 @@
                 "level" 1
                 "context" .
               ) }}
+          <div class="menu-bottom">
+            <a href="https://rapportdemission.openclassrooms.com/assets/pdf/OpenClassrooms_Mission_Report_2023_FR.pdf" target="_blank">
+              {{ if eq site.LanguageCode "en" }}
+                PDF (version française)
+              {{ else }}
+                FR - PDF (version française)
+              {{ end }}
+            </a>
+            <a href="https://openclassrooms.com/en/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
+              {{ if eq site.LanguageCode "en" }}
+                More information about OpenClassRooms
+              {{ else }}
+                FR - More information about OpenClassRooms
+              {{ end }}
+            </a>
+          </div>
         </div>
       {{ end }}
     </div>

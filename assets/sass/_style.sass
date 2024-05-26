@@ -19,52 +19,50 @@ b, strong
         margin-top: 2rem
 
 //Common - header
-.menu
-    -webkit-flex-basis: 100vw
-    display: none
-    flex-basis: 100vw
-    margin-top: $spacing-3
-    max-height: var(--header-menu-max-height)
-    overflow: auto
+header#document-header
+    html.is-scrolling-down:not(.has-menu-opened) &
+        transform: translateY(-100%)
+    html.has-menu-opened &
+        nav
+            height: 100vh
 
-.menu 
-    display: none
-    &.is-opened
-        display: block
-    .nav-level-1
-        li.has-children
-            [role="button"]
-                align-items: center
-                display: flex
-                justify-content: space-between
+header#document-header
+    nav
+        .header-button
+            display: flex
+            align-items: center
+        .logo img
+         max-width: 12rem
+
+header#document-header 
+    .header-right-block
+        display: inline-flex
+        align-items: center
+        .header-menu-langage
+            display: inline-flex
+            margin-right: 4rem
+            align-items: center
+            a
                 text-decoration: none
-                @include icon(caret-bottom, after)
-                    display: block
-                &::after
-                    line-height: 1
-            .dropdown-menu
-                display: none !important
-                padding-top: 0
-            [aria-expanded=true] + .dropdown-menu
-                display: block
-    .dropdown-menu
-        padding-left: 0
-    .is-titled
-        .container
-            padding-left: 0
-            padding-right: 0
+            div 
+                padding-left: 0.3rem
+                padding-right: 0.3rem
+        button.header-button
+            span
+                font-size: var(--body-size)
 
+//Common - menu header + footer
 .menu, #document-footer
     .nav-level-1
         display: grid
         grid-template-columns: repeat(4, 1fr)
         gap: 4rem
+        justify-items: center
         justify-content: center
         > li.menu-block 
             width: 100%
             max-width: 256px
             height: 256px
-            margin: auto
             border-bottom: none !important
             > a
                 padding: 0
@@ -100,38 +98,53 @@ b, strong
                 padding-bottom: $spacing-3
                 padding-top: $spacing-3
 
-header#document-header
-    html.is-scrolling-down:not(.has-menu-opened) &
-        transform: translateY(-100%)
-    html.has-menu-opened &
-        nav
-            height: 100vh
-
-header#document-header
-    nav
-        .header-button
-            display: flex
-            align-items: center
-        .logo img
-         max-width: 12rem
-
-header#document-header 
-    .header-right-block
-        display: inline-flex
-        align-items: center
-        .header-menu-langage
-            display: inline-flex
-            margin-right: 4rem
-            align-items: center
-            a
+//Menu - header
+header#document-header .container
+    height: 100%
+.menu
+    -webkit-flex-basis: 100vw
+    display: none
+    flex-basis: 100vw
+    margin-top: $spacing-3
+    max-height: var(--header-menu-max-height)
+    overflow: auto
+    &.is-opened
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        height: 100%
+    .nav-level-1
+        li.has-children
+            [role="button"]
+                align-items: center
+                display: flex
+                justify-content: space-between
                 text-decoration: none
-            div 
-                padding-left: 0.3rem
-                padding-right: 0.3rem
-        button.header-button
-            span
-                font-size: var(--body-size)
+                @include icon(caret-bottom, after)
+                    display: block
+                &::after
+                    line-height: 1
+            .dropdown-menu
+                display: none !important
+                padding-top: 0
+            [aria-expanded=true] + .dropdown-menu
+                display: block
+    .dropdown-menu
+        padding-left: 0
+    .is-titled
+        .container
+            padding-left: 0
+            padding-right: 0
+    .menu-bottom
+        text-transform: uppercase
+        display: flex
+        justify-content: space-between
+        width: 100%
+        padding: 3rem 0rem
 
+
+
+//Common - footer
 #document-footer
     padding-left: 4rem
     padding-right: 4rem

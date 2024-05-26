@@ -1,4 +1,3 @@
-{{ $siteLang := "" }}
 {{ $siteLang := . }}
 {{- $ulClass := "" -}}
 {{- if .class -}}
@@ -10,7 +9,13 @@
     <a href="/{{ site.Language }}">
       <div class="menu-block-content" style="background: #8C79E8">
         <img src="/assets/images/menu_foreword.svg" />
-        <div class="menu-block-title">Foreword</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Foreword
+          {{ else }}
+            FR - Foreword
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -18,7 +23,13 @@
     <a href="/{{ site.Language }}/our-mission">
       <div class="menu-block-content" style="background: #EDB3B2">
         <img src="/assets/images/menu_our_mission.svg" />
-        <div class="menu-block-title">Our mission</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Our mission
+          {{ else }}
+            FR - Our mission
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -26,7 +37,13 @@
     <a href="/{{ site.Language }}/impacting-students">
       <div class="menu-block-content" style="background: #FF7B6D">
         <img src="/assets/images/menu_impacting_students.svg" />
-        <div class="menu-block-title">Impacting students</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Impacting students
+          {{ else }}
+            FR - Impacting students
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -34,7 +51,13 @@
     <a href="/{{ site.Language }}/impacting-employers">
       <div class="menu-block-content" style="background: #5F9760">
         <img src="/assets/images/menu_impacting_employers.svg" />
-        <div class="menu-block-title">Impacting employers</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Impacting employers
+          {{ else }}
+            FR - Impacting employers
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -42,7 +65,13 @@
     <a href="/{{ site.Language }}/impacting-our-community"> 
       <div class="menu-block-content" style="background: #EDB5B0">
         <img src="/assets/images/menu_impacting_community.svg" />
-        <div class="menu-block-title">Impacting our community</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Impacting our community
+          {{ else }}
+            FR - Impacting our community
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -50,7 +79,13 @@
     <a href="/{{ site.Language }}/impacting-our-planet">
       <div class="menu-block-content" style="background: #8C79E8">
         <img src="/assets/images/menu_impacting_planet.svg" />
-        <div class="menu-block-title">Impacting our planet</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Impacting our planet
+          {{ else }}
+            FR - Impacting our planet
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -58,7 +93,13 @@
     <a href="/{{ site.Language }}/our-commitment-to-progress">
       <div class="menu-block-content" style="background: #F9AB2D">
         <img src="/assets/images/menu_commitment_progress.svg" />
-        <div class="menu-block-title">Our commitment to progress</div>
+        <div class="menu-block-title">
+          {{ if eq site.LanguageCode "en" }}
+            Our commitment to progress
+          {{ else }}
+            FR - Our commitment to progress
+          {{ end }}
+        </div>
       </div>
     </a>
   </li>
@@ -67,7 +108,7 @@
       <div class="menu-block-content" style="background: #9CC7F2">
         <img src="/assets/images/menu_making_off.svg" />
         <div class="menu-block-title">
-          {{ if (eq site.Language "en") }}
+          {{ if eq site.LanguageCode "en" }}
             Making off
           {{ else }}
             FR - Making off
