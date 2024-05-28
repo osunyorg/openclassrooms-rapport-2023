@@ -8,51 +8,10 @@
     .content
       justify-content: center !important
       padding-top: 0px
-      .hero-text
-        position: absolute
-        width: 50%
-        top: 0
-        left: 0
-        margin-left: 1rem
-        z-index: 2
       figure
         width: 85%
   .document-content
     .blocks
-      .block:first-child,
-      .heading.container:nth-child(2),
-      .block:nth-child(7),
-      .block:nth-child(12),
-      .heading.container:nth-child(15),
-      .block:nth-child(16),
-      .block:nth-child(17),
-      .heading.container:nth-child(20),
-      .block:nth-child(22)
-        grid-column: 1 / 3
-        max-width: 1200px
-      .block:nth-child(3),
-      .block:nth-child(5),
-      .block:nth-child(8),
-      .block:nth-child(10),
-      .block:nth-child(13),
-      .block:nth-child(18),
-      .block:nth-child(21)
-        grid-column: 1
-        max-width: 600px
-      .block:nth-child(4),
-      .block:nth-child(6),
-      .block:nth-child(9),
-      .block:nth-child(11),
-      .block:nth-child(14),
-      .block:nth-child(19),
-      .block:nth-child(23)
-        grid-column: 2
-        max-width: 600px
-      .block:nth-child(21),
-      .block:nth-child(22),
-      .block:nth-child(23)
-        grid-row: 16
-        align-self: baseline
       .block:first-child
         margin-top: 6rem
         text-transform: uppercase
@@ -224,7 +183,59 @@
       .block:nth-child(23)
         width: 66%
         margin-left: 40%
+  
+  @include media-breakpoint-down(desktop)
+    header.hero
+      .content
+        figure
+          margin: auto
 
+  @include media-breakpoint-up(desktop)
+    header.hero
+      .content
+        .hero-text
+          position: absolute
+          width: 50%
+          top: 0
+          left: 0
+          margin-left: 1rem
+          z-index: 2
+    .document-content
+      .blocks
+        .block:first-child,
+        .heading.container:nth-child(2),
+        .block:nth-child(7),
+        .block:nth-child(12),
+        .heading.container:nth-child(15),
+        .block:nth-child(16),
+        .block:nth-child(17),
+        .heading.container:nth-child(20),
+        .block:nth-child(22)
+          grid-column: 1 / 3
+          max-width: 1200px
+        .block:nth-child(3),
+        .block:nth-child(5),
+        .block:nth-child(8),
+        .block:nth-child(10),
+        .block:nth-child(13),
+        .block:nth-child(18),
+        .block:nth-child(21)
+          grid-column: 1
+          max-width: 600px
+        .block:nth-child(4),
+        .block:nth-child(6),
+        .block:nth-child(9),
+        .block:nth-child(11),
+        .block:nth-child(14),
+        .block:nth-child(19),
+        .block:nth-child(23)
+          grid-column: 2
+          max-width: 600px
+        .block:nth-child(21),
+        .block:nth-child(22),
+        .block:nth-child(23)
+          grid-row: 16
+          align-self: baseline
 
 //1 - By
 //2 - Titre - WHAT DOES IT MEAN TO MAKE EDUCATION ACCESSIBLE?
