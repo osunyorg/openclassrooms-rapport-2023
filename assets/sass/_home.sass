@@ -275,9 +275,53 @@
             .text
               padding-left: 0rem
 
+.page-home-fr
+  .document-content
+    .blocks
+      .block:nth-child(2)
+        .chapter
+          flex-direction: row
+          .text
+            padding-left: 0rem
+      .block:nth-child(3)
+        .chapter
+          flex-direction: row-reverse
+          .text
+            padding-left: 2rem
+          figure
+            img
+              margin-left: 0
+              margin-right: 2rem
+      .block:nth-child(2)
+        color: #FFFFFF
+        line-height: 160%
+        text-transform: none
+        font-weight: 230
+      .block:nth-child(3)
+        color: #F2E93F
+        line-height: 140%
+        text-transform: uppercase
+        font-weight: normal
+  @include media-breakpoint-down(desktop)
+    .document-content
+      .blocks
+        .block:nth-child(3)
+          .chapter
+            flex-direction: row
+        .block:nth-child(2)
+          margin-bottom: 3rem
+  @include media-breakpoint-down(sm)
+    .document-content
+      .blocks
+        .block:nth-child(3)
+          .chapter
+            flex-direction: column
+            .text
+              padding-left: 0rem
+
 //1 - Titre - Foreword
-//2 - A message from
-//3 - "The purpose of business
+//2 - A message from -- en 3 en fr
+//3 - "The purpose of business -- en 2 en fr
 //4 - Titre - OpenClassrooms explained
 //5 - As a mission-driven
 //6 - OpenClassrooms provides 660+
