@@ -37,7 +37,16 @@
     .block:nth-child(3)
       margin-left: auto
       margin-right: auto
-      max-width: 80%
+      width: 80%
+    .block:nth-child(2)
+      .chapter
+        flex-direction: row-reverse
+        .text
+          padding-left: 2rem
+        figure
+          img
+            margin-left: 0
+            margin-right: 2rem
     .heading.container:nth-child(4),
     .heading.container:nth-child(13)
       h2
@@ -223,35 +232,48 @@
             font-size: 3rem
     
   @include media-breakpoint-down(desktop)
-    .block:nth-child(3),
-    .block:nth-child(5),
-    .block:nth-child(14)
-      margin-bottom: 3rem
-    .block:nth-child(12)
-      margin-top: 6rem
-      .chapter
-        display: block
-        .text
-          .rich-text p
+    .document-content
+      .blocks
+        .block:nth-child(2)
+          .chapter
+            flex-direction: row
+        .block:nth-child(3),
+        .block:nth-child(5),
+        .block:nth-child(14)
+          margin-bottom: 3rem
+        .block:nth-child(12)
+          margin-top: 6rem
+          .chapter
+            display: block
+            .text
+              .rich-text p
+                font-size: var(--lead-size)
+                &:before
+                  margin-left: 15rem
+                  margin-top: -2rem
+                  width: 2rem
+                  height: 3.27025rem
+        .block:nth-child(15)
+          color: #F2E93F
+          &:after
+            width: 100%
+            max-width: 500px
+            height: 100%
+            max-height: 152px
+        .block:nth-child(16)
+          margin-top: calc(224px + 4rem)
+        .block:nth-child(18)
+          p
             font-size: var(--lead-size)
-            &:before
-              margin-left: 15rem
-              margin-top: -2rem
-              width: 2rem
-              height: 3.27025rem
-    .block:nth-child(15)
-      color: #F2E93F
-      &:after
-        width: 100%
-        max-width: 500px
-        height: 100%
-        max-height: 152px
-    .block:nth-child(16)
-      margin-top: calc(224px + 4rem)
-    .block:nth-child(18)
-      p
-        font-size: var(--lead-size)
 
+  @include media-breakpoint-down(sm)
+    .document-content
+      .blocks
+        .block:nth-child(2)
+          .chapter
+            flex-direction: column
+            .text
+              padding-left: 0rem
 
 //1 - Titre - Foreword
 //2 - A message from
