@@ -125,45 +125,23 @@
               grid-row: 2 / 4
       .heading.container:nth-child(14)
         margin-bottom: 0px
-      .block:nth-child(15),
-      .block:nth-child(16)
-        margin: auto
-        width: 70%
-        border-left: 0.0625rem solid #271A38
-        border-right: 0.0625rem solid #271A38
-        padding: 2rem
-        padding-bottom: 8rem
-        figure
-          display: flex
-          flex-direction: column-reverse
-          padding-right: 0px
-          figcaption p
-            color: #5A9460
-            .signature
-              font-weight: 600
-          blockquote
-            margin-top: 2rem
-            p
-              font-style: normal
-              font-weight: 230
-              line-height: 160%
-              font-size: var(--lead-size)
-      .block:nth-child(16)
-        border-top: 0.0625rem solid #271A38
-        padding-bottom: 24rem
-        &:after
-          background-image: url('/assets/images/computer.svg')
-          content: ""
-          z-index: 2
-          position: absolute
-          pointer-events: none
-          background-size: 100%
-          background-repeat: no-repeat
-          background-attachment: scroll
-          width: 39.75rem
-          height: 24.4375rem
-          bottom: -4px
-          left: -11%
+      .block:nth-child(15)
+        .top
+          .description
+            width: 60%
+        ul.even-items
+          display: grid
+          grid-template-columns: repeat(2, 1fr)
+          gap: 4rem
+          justify-items: center
+          li
+            list-style-type: none
+            max-width: 448px
+            max-height: 448px
+            display: block
+          a:after
+              content: none
+
 
   @include media-breakpoint-up(desktop)
     header.hero
@@ -180,8 +158,7 @@
         .heading.container:nth-child(7),
         .heading.container:nth-child(10),
         .heading.container:nth-child(14),
-        .block:nth-child(15),
-        .block:nth-child(16)
+        .block:nth-child(15)
           grid-column: 1 / 3
           max-width: 1200px
         .block:nth-child(3),
@@ -246,18 +223,6 @@
             margin-top: 2rem 
         .block:nth-child(11)
           margin-bottom: 3rem
-        .block:nth-child(15),
-        .block:nth-child(16)
-          width: 80%
-          padding: 0 0 4rem 0
-          blockquote
-            margin-top: 1rem
-        .block:nth-child(16)
-          padding-bottom: 13rem
-          &:after
-            width: 19.875rem
-            height: 12.2188rem
-            left: 2%
 
   @include media-breakpoint-down(sm)
     .document-content
@@ -271,6 +236,15 @@
           &:after
             left: 0
             margin-top: 2rem
+        .block:nth-child(15)
+          .top
+            .description
+              width: 100%
+          ul.even-items
+            display: block
+            width: 60%
+            margin-left: auto
+            margin-right: auto
 
 //1 - Titre - Fostering diversity in the workplace
 //2 - The OpenClassrooms mission is two-fold
@@ -286,5 +260,5 @@
 //12 - In that perspective, OpenClassrooms advocates
 //13 - 84%
 //14 - Titre - Testimony
-//15 - Testimony 1
+//15 - Liste liens témoignage
 //16 - Testimony 2

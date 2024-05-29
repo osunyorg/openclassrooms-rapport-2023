@@ -1,0 +1,39 @@
+{{- $block := .block -}}
+{{- $block_class := partial "GetBlockClass" .block -}}
+
+{{- with .block.data -}}
+  {{- $links := .links }}
+  <div class="{{ $block_class }}">
+    <div class="container">
+      <div class="block-content">
+        {{ partial "blocks/top.html" (dict
+          "title" $block.title
+          "heading_level" $block.ranks.self
+          "description" .description
+        )}}
+
+        {{ if $links }}
+          {{ $list_class := "odd-items" }}
+          {{ if (modBool (len $links) 2) }}
+            {{ $list_class = "even-items" }}
+          {{ end }}
+          <ul class="{{ $list_class }}">
+            {{- range .links }}
+              <li>
+                <a href="{{ .url }}" target="_blank" rel="noopener" title="{{ .title }}">
+                  {{ with .image }}
+                    {{ partial "commons/image.html"
+                      (dict
+                        "image"    .
+                        "sizes"    site.Params.image_sizes.blocks.organizations
+                      )}}
+                  {{ end }}
+                </a>
+              </li>
+            {{ end -}}
+          </ul>
+        {{ end -}}
+      </div>
+    </div>
+  </div>
+{{- end -}}
