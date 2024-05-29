@@ -31,7 +31,6 @@
           font-size: var(--lead-size)
           font-weight: 230
       .block:nth-child(4)
-        padding-top: 10rem
         .top
           margin-bottom: 1rem
           width: 75%
@@ -79,7 +78,6 @@
       .block:nth-child(7),
       .block:nth-child(12)
         width: 100%
-        margin-top: 6rem
         .text
           width: 100%
           .top
@@ -98,17 +96,11 @@
             font-size: var(--body-size)
             font-weight: 400
             line-height: 160%
-      .block:nth-child(14)
-        padding-top: 5rem
       .heading.container:nth-child(15),
       .heading.container:nth-child(20)
         margin-top: 5rem !important
         h2
-          width: 100%
-          border-top: 0.0625rem solid #271A38
-          border-bottom: 0.0625rem solid #271A38
-          padding-top: 2.7rem
-          padding-bottom: 2.7rem
+          border-color: #271A38
         p
           line-height: 160%
           font-size: 1.7rem
@@ -124,8 +116,6 @@
             h3.block-title
               border-top: 0.0625rem solid #271A38
               border-bottom: 0.0625rem solid #271A38
-              padding-top: 2rem
-              padding-bottom: 2rem
               font-size: var(--lead-size)
               font-weight: 400
               line-height: 140%
@@ -140,21 +130,15 @@
             tr
               position: relative
               td, th 
-                width: 50%
-                padding-top: 2rem
-                padding-bottom: 2rem
                 border: none
               td:first-child, th:first-child
-                padding-right: 2%
                 border-right: 0.0625rem solid #271A38
               td:nth-child(2), th:nth-child(2)
-                padding-left: 2%
             tr:not(:last-child)
               td, th 
                 &:after
                   content: ""
                   border-bottom: 0.0625rem solid #271A38
-                  width: 48%
                   height: 100%
                   position: absolute
                   top: 0
@@ -166,8 +150,6 @@
                   right: 0
             tr:last-child
               border-bottom: 0.0625rem solid #271A38
-      .block:nth-child(19)
-        padding-top: 10rem
       .block:nth-child(21),
       .block:nth-child(22),
       .block:nth-child(23)
@@ -183,12 +165,6 @@
       .block:nth-child(23)
         width: 66%
         margin-left: 40%
-  
-  @include media-breakpoint-down(desktop)
-    header.hero
-      .content
-        figure
-          margin: auto
 
   @include media-breakpoint-up(desktop)
     header.hero
@@ -236,6 +212,72 @@
         .block:nth-child(23)
           grid-row: 16
           align-self: baseline
+        
+        .block:nth-child(4)
+          padding-top: 10rem
+        .block:nth-child(7),
+        .block:nth-child(12)
+          margin-top: 6rem        
+        .block:nth-child(14)
+          padding-top: 5rem
+        .block.block-datatable:nth-child(17)
+          .container
+            .top
+              h3.block-title
+                padding-top: 2rem
+                padding-bottom: 2rem
+            table
+              tr
+                td, th 
+                  width: 50%
+                  padding-top: 2rem
+                  padding-bottom: 2rem
+                td:first-child, th:first-child
+                  padding-right: 2%
+                td:nth-child(2), th:nth-child(2)
+                  padding-left: 2%
+              tr:not(:last-child)
+                td, th 
+                  &:after
+                    width: 48%
+        .block:nth-child(19)
+          padding-top: 10rem
+
+  @include media-breakpoint-down(desktop)
+    header.hero
+      .content
+        figure
+          margin: auto
+    .document-content
+      .blocks
+        .block:nth-child(4)
+          padding-top: 2rem
+        .block:nth-child(7),
+        .block:nth-child(12)
+          margin-top: 3rem
+        .block-key_figures dl dt + dd
+          margin-top: 0px
+        .block.block-datatable:nth-child(17)
+          display: none
+          .container
+            .top
+              h3.block-title
+                padding-top: 1rem
+                padding-bottom: 1rem
+            table
+              tr
+                td, th 
+                  width: 45%
+                  padding-top: 1rem
+                  padding-bottom: 1rem
+                td:first-child, th:first-child
+                  padding-right: 2%
+                td:nth-child(2), th:nth-child(2)
+                  padding-left: 2%
+              tr:not(:last-child)
+                td, th 
+                  &:after
+                    width: 43%
 
 //1 - By
 //2 - Titre - WHAT DOES IT MEAN TO MAKE EDUCATION ACCESSIBLE?

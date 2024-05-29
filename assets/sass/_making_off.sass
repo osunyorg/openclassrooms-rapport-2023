@@ -21,30 +21,6 @@
 
   .document-content
     .blocks
-      display: grid
-      grid-template-columns: repeat(3, 33.33%)
-      gap: 0
-      width: 100%
-      max-width: 1200px
-      margin: auto
-      .container
-        width: 100%
-        max-width: 100%
-      .block:first-child
-        grid-column: 1 / 4
-        max-width: 1200px
-      .block:nth-child(2),
-      .block:nth-child(5)
-        grid-column: 1
-        max-width: 400px
-      .block:nth-child(3),
-      .block:nth-child(6)
-        grid-column: 2
-        max-width: 400px
-      .block:nth-child(4),
-      .block:nth-child(7)
-        grid-column: 3
-        max-width: 400px
       .block:first-child
         margin-bottom: 4rem
         color: #8A76E8
@@ -81,6 +57,37 @@
       .block:nth-child(7)
         padding-bottom: 12rem
 
+  @include media-breakpoint-up(desktop)
+    .document-content
+      .blocks
+        grid-template-columns: repeat(3, 33.33%)
+        .block:first-child
+          grid-column: 1 / 4
+          max-width: 1200px
+        .block:nth-child(2),
+        .block:nth-child(5)
+          grid-column: 1
+          max-width: 400px
+        .block:nth-child(3),
+        .block:nth-child(6)
+          grid-column: 2
+          max-width: 400px
+        .block:nth-child(4),
+        .block:nth-child(7)
+          grid-column: 3
+          max-width: 400px
+
+  @include media-breakpoint-down(desktop)
+    .document-content
+      .blocks
+        .block:nth-child(2),
+        .block:nth-child(3),
+        .block:nth-child(4)
+          padding-bottom: 3rem
+        .block:nth-child(5),
+        .block:nth-child(6),
+        .block:nth-child(7)
+          padding-bottom: 3rem
 
 //1 - This Mission report was designed to match our values
 //2 - Writing

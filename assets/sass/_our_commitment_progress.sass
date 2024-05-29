@@ -24,25 +24,6 @@
   .document-content
     .blocks
       .block:first-child,
-      .heading.container:nth-child(2),
-      .heading.container:nth-child(6),
-      .heading.container:nth-child(9),
-      .heading.container:nth-child(12),
-      .block:nth-child(13)
-        grid-column: 1 / 3
-        max-width: 1200px
-      .block:nth-child(3),
-      .block:nth-child(5),
-      .block:nth-child(7),
-      .block:nth-child(10)
-        grid-column: 1
-        max-width: 600px
-      .block:nth-child(4),
-      .block:nth-child(8),
-      .block:nth-child(11)
-        grid-column: 2
-        max-width: 600px
-      .block:first-child,
       .block:nth-child(3),
       .block:nth-child(7),
       .block:nth-child(10),
@@ -62,11 +43,7 @@
       .heading.container:nth-child(12)
         margin-bottom: 3rem
         h2
-          width: 100%
-          border-top: 0.0625rem solid #271A38
-          border-bottom: 0.0625rem solid #271A38
-          padding-top: 2.7rem
-          padding-bottom: 2.7rem
+          border-color: #271A38
           text-transform: uppercase
       .block:nth-child(4)
         grid-row: 3 / 5
@@ -103,8 +80,41 @@
       .block:nth-child(11)
         margin-top: 12rem
         margin-bottom: 6rem
-      .block:nth-child(13)
-        padding-bottom: 12rem
+
+  @include media-breakpoint-up(desktop)
+    .document-content
+      .blocks
+        .block:first-child,
+        .heading.container:nth-child(2),
+        .heading.container:nth-child(6),
+        .heading.container:nth-child(9),
+        .heading.container:nth-child(12),
+        .block:nth-child(13)
+          grid-column: 1 / 3
+          max-width: 1200px
+        .block:nth-child(3),
+        .block:nth-child(5),
+        .block:nth-child(7),
+        .block:nth-child(10)
+          grid-column: 1
+          max-width: 600px
+        .block:nth-child(4),
+        .block:nth-child(8),
+        .block:nth-child(11)
+          grid-column: 2
+          max-width: 600px
+
+  @include media-breakpoint-down(desktop)
+    .document-content
+      .blocks
+        .block:nth-child(5)
+          margin-bottom: 3rem
+        .block:nth-child(8)
+          margin-top: 3rem
+          margin-bottom: 3rem
+        .block:nth-child(11)
+          margin-top: 3rem
+          margin-bottom: 3rem
 
 //1 - While our annual Mission report is a source of pride
 //2 - Titre - Improve our insights into our impact on free users
