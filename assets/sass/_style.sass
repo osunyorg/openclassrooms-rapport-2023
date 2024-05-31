@@ -41,12 +41,16 @@ header#document-header
             a
                 text-decoration: none
                 color: #fff
+                &:hover
+                    color: #8C79E8
             div 
                 padding-left: 0.3rem
                 padding-right: 0.3rem
         button.header-button
             span
                 font-size: var(--body-size)
+            &:hover span
+                color: #8C79E8
 
 //Common - menu header + footer
 .menu, #document-footer
@@ -61,6 +65,8 @@ header#document-header
                 padding: 0
                 display: block
                 text-decoration: none
+                &:hover
+                    border: solid 2px #FFF
             .menu-block-content
                 width: 100%
                 height: 100%
@@ -192,6 +198,25 @@ header#document-header .container
 //Common - all pages
 header.hero
     background: none
+    max-width: 1200px
+    margin-left: auto
+    margin-right: auto
+    .container
+      .content
+        display: block
+        justify-content: center !important
+        padding-top: 0px
+        figure
+          margin: auto
+          width: 100%
+        .hero-text
+          margin-top: 0px
+
+@include media-breakpoint-down(desktop)
+    header.hero
+        .container
+            .content
+                padding-top: 2rem
 .document-content
     .blocks
         width: 100%
