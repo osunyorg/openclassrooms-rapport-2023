@@ -7,6 +7,10 @@
     .content
       figure
         width: 85%
+        margin-top: -10rem
+      .hero-text
+        z-index: 3
+        position: relative
   .document-content
     .blocks
       .block:first-child
@@ -26,7 +30,6 @@
         p
           line-height: 160%
           font-size: var(--lead-size)
-          font-weight: 230
       .block:nth-child(4)
         .top
           margin-bottom: 1rem
@@ -81,7 +84,6 @@
             margin-bottom: 0px
             h3.block-title
               text-transform: none
-              font-weight: 230
               line-height: 160%
               font-size: var(--lead-size)
       .block:nth-child(8),
@@ -164,13 +166,6 @@
         margin-left: 40%
 
   @include media-breakpoint-up(desktop)
-    header.hero
-      .content
-        .hero-text
-          position: absolute
-          width: 50%
-          top: 0
-          z-index: 2
     .document-content
       .blocks
         .block:first-child,
