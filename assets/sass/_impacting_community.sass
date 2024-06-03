@@ -215,9 +215,14 @@
         margin-bottom: 0px
         padding-bottom: 0px
         figure
-          a.glightbox
-            width: 100%
-            margin: 0px
+          picture
+            display: flex
+            justify-content: flex-end
+            img
+              width: 50%
+              height: 50%
+          figcaption
+            display: none
       .heading.container:nth-child(20)
         margin-top: 0px !important
       .block:nth-child(27)
@@ -355,8 +360,12 @@
           blockquote
             margin-top: 1rem
         .block:nth-child(19)
-          margin-right: 0px
-          margin-bottom: -12px
+          padding-right: 3rem
+          figure
+            picture
+              img
+                width: 75%
+                height: 75%
         .block:nth-child(27),
         .block:nth-child(28)
           margin-top: 4rem
