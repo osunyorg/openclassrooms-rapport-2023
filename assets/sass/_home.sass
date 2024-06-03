@@ -13,12 +13,20 @@
   header.hero
     max-width: 100%
     .container
+      max-width: 1200px
+      padding-left: var(--grid-gutter)
+      padding-right: var(--grid-gutter)
       .content
         display: flex
         .hero-text
           position: absolute
           z-index: 2
-          margin-left: 30%
+          margin-left: 10%
+        figure
+          picture
+            img
+              width: 50%
+              height: 50%
 
   .document-content
     .heading.container:first-child
@@ -164,7 +172,6 @@
   @include media-breakpoint-up(desktop)
     header.hero
       .container
-        padding: 0px
         .hero-text
           position: absolute
           width: 50%
@@ -229,6 +236,9 @@
             font-size: 3rem
     
   @include media-breakpoint-down(desktop)
+    header.hero
+      .container
+        margin-bottom: 0px
     .document-content
       .blocks
         .block:nth-child(2)
