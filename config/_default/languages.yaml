@@ -9,8 +9,6 @@ en:
   params:
     social:
   permalinks:
-    persons: /team/:slug/
-    persons_categories: /team/:slug/
   taxonomies:
     administrator: administrators
     author: authors
@@ -33,8 +31,6 @@ fr:
   params:
     social:
   permalinks:
-    persons: /equipe/:slug/
-    persons_categories: /equipe/:slug/
   taxonomies:
     administrator: administrators
     author: authors
