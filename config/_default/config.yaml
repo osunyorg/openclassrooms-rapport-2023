@@ -8,4 +8,11 @@ params:
   summary:
     position: hero
   search:
-    active: false  
+    active: false
+  blocks:
+    key_figures:
+      animated: false
+  image_sizes:
+    design_system:
+      lightbox:
+        disabled: true
