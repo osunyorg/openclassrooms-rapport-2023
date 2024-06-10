@@ -37,7 +37,7 @@
       .heading.container:nth-child(12),
       .heading.container:nth-child(17),
       .heading.container:nth-child(21),
-      .heading.container:nth-child(36)
+      .heading.container:nth-child(38)
         h2
           line-height: 100%
           border-color: #271A38
@@ -382,10 +382,17 @@
                 padding-bottom: 1rem
               &:not(:last-child)
                 border-right: 0.0625rem solid #271A38
-    .heading.container:nth-child(36)
+    .block:nth-child(36)
+      h3.block-title
+        font-size: var(--lead-size)
+        line-height: 140%
+        text-transform: uppercase
+    .block:nth-child(37)
+      margin-top: 24rem
+      margin-bottom: 6rem
+    .heading.container:nth-child(38)
       margin-bottom: -1px
-    .block:nth-child(37),
-    .block:nth-child(38)
+    .block:nth-child(39)
       margin: auto
       width: 70%
       border-left: 0.0625rem solid #271A38
@@ -406,7 +413,7 @@
             font-style: normal
             line-height: 160%
             font-size: var(--lead-size)
-    .block:nth-child(37)
+    .block:nth-child(39)
       border-top: 0.0625rem solid #271A38
       padding-bottom: 10rem
       &:before
@@ -422,22 +429,6 @@
         height: 447px
         margin-top: 10rem
         margin-left: -26rem
-    .block:nth-child(38)
-      border-top: 0.0625rem solid #271A38
-      padding-bottom: 12rem
-      &:after
-        background-image: url('/assets/images/testi_fanny.svg')
-        content: ""
-        z-index: 2
-        position: absolute
-        pointer-events: none
-        background-size: 100%
-        background-repeat: no-repeat
-        background-attachment: scroll
-        width: 300px
-        height: 295px
-        bottom: 0px
-        right: 0
 
   @include media-breakpoint-up(desktop)
     .document-content
@@ -463,9 +454,8 @@
         .block:nth-child(29),
         .block:nth-child(30),
         .block:nth-child(35),
-        .heading.container:nth-child(36),
-        .block:nth-child(37),
-        .block:nth-child(38)
+        .heading.container:nth-child(38),
+        .block:nth-child(39)
           grid-column: 1 / 3
           max-width: 1200px
         .block:nth-child(3),
@@ -473,7 +463,8 @@
         .block:nth-child(10),
         .block:nth-child(13),
         .block:nth-child(19),
-        .block:nth-child(31)
+        .block:nth-child(31),
+        .block:nth-child(36)
           grid-column: 1
           max-width: 600px
         .block:nth-child(4),
@@ -481,7 +472,8 @@
         .block:nth-child(11),
         .block:nth-child(14),
         .block:nth-child(20),
-        .block:nth-child(34)
+        .block:nth-child(34),
+        .block:nth-child(37)
           grid-column: 2
           max-width: 600px
         .block:nth-child(32),
@@ -497,7 +489,8 @@
     .document-content
       .blocks
         .block:nth-child(4),
-        .block:nth-child(14)
+        .block:nth-child(14),
+        .block:nth-child(37)
           margin-top: 2rem
           margin-bottom: 2rem
         .block:nth-child(5),
@@ -608,20 +601,14 @@
                 dt strong
                   margin-top: 2rem
                   margin-bottom: 1.7rem
-        .block:nth-child(37),
-        .block:nth-child(38)
+        .block:nth-child(39)
           width: 80%
           padding: 0 0 4rem 0
           blockquote
             margin-top: 1rem
-        .block:nth-child(37)
+        .block:nth-child(39)
           &:before
             content: none
-        .block:nth-child(38)
-          padding-bottom: 11rem
-          &:after
-            width: 192px
-            height: 188.5px
 
 //1 - Having a positive impact on our students' lives
 //2 - Titre - Breaking barriers to education
@@ -645,19 +632,20 @@
 //20 - 81%
 //21 - Titre - Demographics
 //22 - While striving to enhance our impact
-//23 - 68% 70%
-//24 - 36% 31%
-//25 - 0,6% 0,4%
-//26 - 6% 9%
-//27 - 6% 7%
-//28 - 31% 37%
+//23 - 70% 63%
+//24 - 48% 42%
+//25 - 0,6% 0,6%
+//26 - 9% 9%
+//27 - 6% 6%
+//28 - 24% 27%
 //29 - NB: many students belong to several categories
-//30 - 73% of our students fit into
+//30 - 75% of our students fit into
 //31 - Meanwhile, we also broadened our international presence.
 //32 - 10%
 //33 - 18%
 //34 - 222 countries
 //35 - 82% 12% 3% 3%
-//36 - Titre - Testimony
-//38 - Testimony 1
-//39 - Testimony 2
+//36 - METHODOLOGICAL NOTE ON DATA COLLECTION
+//37 - The calculation of the percentage
+//38 - Titre - Testimony
+//39 - Testimony 1
