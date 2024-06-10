@@ -155,6 +155,11 @@ header#document-header .container
         justify-content: space-between
         width: 100%
         padding: 3rem 0rem
+        a 
+            text-decoration: underline
+            text-decoration-thickness: 1px
+            &:hover
+                color: #8C79E8 !important
 
 //Common - footer
 @include media-breakpoint-up(desktop)
@@ -181,6 +186,12 @@ header#document-header .container
             margin: auto
         .footer-bottom
             margin-top: 8rem
+            a 
+                text-decoration: underline
+                text-decoration-thickness: 1px
+                text-transform: uppercase
+                &:hover
+                    color: #8C79E8 !important
 
 @include media-breakpoint-down(desktop)
     .nav-level-1
