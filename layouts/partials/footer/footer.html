@@ -1,6 +1,12 @@
 <footer id="document-footer">
   {{- partial "commons/ocr_menu_content.html" -}}
   <div class="footer-bottom">
-    <a href="https://rapportdemission.openclassrooms.com/library/" target="_blank">Please check out our previous publications.</a>
+    <a href="https://rapportdemission.openclassrooms.com/library/" target="_blank">
+      {{ if eq site.LanguageCode "en" }}
+        Please check out our previous publications.
+      {{ else }}
+        Découvrez nos précédentes publications.
+      {{ end }}
+    </a>
   </div>
 </footer>

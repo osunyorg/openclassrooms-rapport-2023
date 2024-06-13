@@ -29,13 +29,15 @@
                 PDF (version française)
               {{ end }}
             </a>
-            <a href="https://openclassrooms.com/en/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
-              {{ if eq site.LanguageCode "en" }}
+            {{ if eq site.LanguageCode "en" }}
+              <a href="https://openclassrooms.com/en/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
                 More information about OpenClassrooms
-              {{ else }}
+              </a>
+            {{ else }}
+              <a href="https://openclassrooms.com/fr/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
                 En savoir plus sur OpenClassooms
-              {{ end }}
-            </a>
+              </a>
+            {{ end }}
           </div>
         </div>
       {{ end }}
