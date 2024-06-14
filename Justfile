@@ -2,12 +2,12 @@ set dotenv-load := true
 
 export AWS_PROFILE := env_var_or_default("AWS_PROFILE", "infra_tools_external")
 
-deploy bucket="mr-staging.openclassrooms.tech": (generate bucket)
+deploy lang bucket="mr-staging.openclassrooms.tech": (generate lang bucket)
     aws s3 sync public/ s3://{{ bucket }} --delete
 
-generate bucket="mr-staging.openclassrooms.tech":
+generate lang bucket="mr-staging.openclassrooms.tech":
     echo "baseURL: https://{{ bucket }}" > config/production/config.yaml
-    echo "defaultContentLanguage: en" >> config/production/config.yaml
+    echo "defaultContentLanguage: {{ lang }}" >> config/production/config.yaml
     echo "defaultContentLanguageInSubdir: true" >> config/production/config.yaml
 
     yarn install
