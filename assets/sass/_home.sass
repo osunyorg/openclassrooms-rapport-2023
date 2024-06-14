@@ -17,16 +17,11 @@
       padding-left: var(--grid-gutter)
       padding-right: var(--grid-gutter)
       .content
-        display: flex
-        .hero-text
-          position: absolute
-          z-index: 2
-          margin-left: 15%
         figure
           picture
             img
-              width: 65%
-              height: 65%
+              width: 75%
+              height: 75%
 
   .document-content
     .heading.container:first-child
@@ -176,12 +171,16 @@
       background-position: top
       background-size: auto
       .container
-        .hero-text
-          position: absolute
-          width: 50%
-          z-index: 2
-          top: 33%
-          margin-left: 6rem
+        .content
+          display: flex
+          .hero-text
+            position: absolute
+            width: 50%
+            z-index: 2
+            top: 33%
+            margin-left: 6rem
+          figure
+            margin-left: -15%
     .document-content
       .blocks
         .heading.container,
@@ -243,6 +242,13 @@
     header.hero
       .container
         margin-bottom: 0px
+        .content
+          figure
+            picture
+              img
+                margin: auto
+          .hero-text
+            margin-bottom: 2rem
     .document-content
       .blocks
         .block:nth-child(2)
