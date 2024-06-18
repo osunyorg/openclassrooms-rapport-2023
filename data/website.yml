@@ -1,4 +1,8 @@
 title: >-
   Rapport 2023
 default:
+  image:
+    id: 63dddb43-b88c-44b6-8127-61ab890a5b30
+  shared_image:
+    id: 86198811-2e6e-4e95-93a0-7901a8e76cb2
 social:
