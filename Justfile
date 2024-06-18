@@ -13,8 +13,8 @@ generate lang bucket="mr-staging.openclassrooms.tech":
     yarn install
 
     aws s3 sync s3://rapportdemission.openclassrooms.com/library ./static/library
-    aws s3 sync s3://rapportdemission.openclassrooms.com/SignatureFR_MissionReport_V4.png ./static/SignatureFR_MissionReport_V4.png
-    aws s3 sync s3://rapportdemission.openclassrooms.com/SignatureEN_MissionReport_V4.png ./static/SignatureEN_MissionReport_V4.png
+    aws s3 cp s3://rapportdemission.openclassrooms.com/SignatureFR_MissionReport_V4.png ./static/SignatureFR_MissionReport_V4.png
+    aws s3 cp s3://rapportdemission.openclassrooms.com/SignatureEN_MissionReport_V4.png ./static/SignatureEN_MissionReport_V4.png
     yarn osuny build
 
 backup bucket="mr-staging.openclassrooms.tech" output="output":
