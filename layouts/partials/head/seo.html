@@ -24,29 +24,6 @@
   {{- end -}}
 {{- end -}}
 
-{{- $sharedImage := "" -}}
-{{- $ogImage := "" -}}
-{{- $twitterImage := "" -}}
-{{- $pagefindImage := "" -}}
-{{- if index site.Data.website.default "shared_image" -}}
-  {{- $sharedImage = partial "GetMedia" (index site.Data.website.default.shared_image "id") -}}
-{{- end -}}
-{{ with .Params.image }}
-  {{- $sharedImage = partial "GetMedia" .id -}}
-{{ end }}
-
-{{- $ogImage = partial "GetImageUrl" (dict
-        "url" "/assets/images/shared_img.png"
-        "size" "1200"
-      ) -}}
-{{- $twitterImage = partial "GetImageUrl" (dict
-        "url" "/assets/images/shared_img.png"
-        "size" "1200"
-      ) -}}
-{{- $pagefindImage = partial "GetImageUrl" (dict
-        "url" "/assets/images/shared_img.png"
-        "size" "244"
-      ) -}}
 {{- $seoUrl := .Permalink -}}
 
 <!-- HTML Meta Tags -->
@@ -56,18 +33,14 @@
 <!-- Facebook Meta Tags -->
 <meta property="og:title" content="{{ $seoTitle }}">
 <meta property="og:description" content="{{ $seoDescription }}">
-{{- with $ogImage }}
 <meta property="og:image" content="/assets/images/shared_img.png">
-{{ end -}}
 <meta property="og:url" content="{{ $seoUrl }}">
 <meta property="og:type" content="website">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:title" content="{{ $seoTitle }}">
 <meta name="twitter:description" content="{{ $seoDescription }}">
-{{- with $twitterImage }}
 <meta name="twitter:image" content="/assets/images/shared_img.png">
-{{ end -}}
 <meta name="twitter:card" content="summary_large_image">
 {{- if site.Data.school.twitter }}
 <meta name="twitter:site" content="@{{ site.Data.school.twitter }}" />
@@ -76,9 +49,7 @@
 {{ end -}}
 
 {{ if site.Params.search.active }}
-  {{ with $pagefindImage }}
-    <meta property="pagefind:image" content="" data-pagefind-meta="/assets/images/shared_img.png">
-  {{ end }}
+  <meta property="pagefind:image" content="" data-pagefind-meta="/assets/images/shared_img.png">
 {{ end }}
 
 {{/*
