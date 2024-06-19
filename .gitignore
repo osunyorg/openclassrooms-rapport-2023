@@ -1,3 +1,4 @@
+/static/library
 /public
 .DS_Store
 node_modules
@@ -8,3 +9,4 @@ node_modules
 jsconfig.json
 yarn-error.log
 /static/pagefind
+/output
