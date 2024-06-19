@@ -57,7 +57,7 @@
 <meta property="og:title" content="{{ $seoTitle }}">
 <meta property="og:description" content="{{ $seoDescription }}">
 {{- with $ogImage }}
-<meta property="og:image" content="{{ . }}">
+<meta property="og:image" content="/assets/images/shared_img.png">
 {{ end -}}
 <meta property="og:url" content="{{ $seoUrl }}">
 <meta property="og:type" content="website">
@@ -77,7 +77,7 @@
 
 {{ if site.Params.search.active }}
   {{ with $pagefindImage }}
-    <meta property="pagefind:image" content="" data-pagefind-meta="image:{{ . }}">
+    <meta property="pagefind:image" content="" data-pagefind-meta="/assets/images/shared_img.png">
   {{ end }}
 {{ end }}
 
