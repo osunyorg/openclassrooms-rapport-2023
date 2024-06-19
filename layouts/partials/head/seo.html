@@ -35,20 +35,18 @@
   {{- $sharedImage = partial "GetMedia" .id -}}
 {{ end }}
 
-{{- with $sharedImage -}}
-  {{- $ogImage = partial "GetImageUrl" (dict
-          "media" .
-          "size" "1200"
-        ) -}}
-  {{- $twitterImage = partial "GetImageUrl" (dict
-          "media" .
-          "size" "1200"
-        ) -}}
-  {{- $pagefindImage = partial "GetImageUrl" (dict
-          "media" .
-          "size" "244"
-        ) -}}
-{{- end -}}
+{{- $ogImage = partial "GetImageUrl" (dict
+        "url" "/assets/images/shared_img.png"
+        "size" "1200"
+      ) -}}
+{{- $twitterImage = partial "GetImageUrl" (dict
+        "url" "/assets/images/shared_img.png"
+        "size" "1200"
+      ) -}}
+{{- $pagefindImage = partial "GetImageUrl" (dict
+        "url" "/assets/images/shared_img.png"
+        "size" "244"
+      ) -}}
 {{- $seoUrl := .Permalink -}}
 
 <!-- HTML Meta Tags -->
