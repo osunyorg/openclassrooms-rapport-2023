@@ -2,7 +2,7 @@
 
 en:
   title: >-
-    Report 2024
+    Rapport 2023
   contentDir: content/en
   languageCode: en
   languageName: English
@@ -24,7 +24,7 @@ en:
     volume: volumes
 fr:
   title: >-
-    Rapport 2024
+    Rapport 2023
   contentDir: content/fr
   languageCode: fr
   languageName: Français
