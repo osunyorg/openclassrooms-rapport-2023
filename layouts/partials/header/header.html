@@ -22,20 +22,24 @@
                 "context" .
               ) }}
           <div class="menu-bottom">
-            <a href="https://rapportdemission.openclassrooms.com/assets/pdf/OpenClassrooms_Mission_Report_2023_FR.pdf" target="_blank">
-              {{ if eq site.LanguageCode "en" }}
+            {{ if eq site.LanguageCode "en" }}
+              <a href="/assets/pdfs/MISSIONREPORT-24-EN.pdf" target="_blank">
+                PDF (English version)
+              </a>
+            {{ else }}
+              <a href="/assets/pdfs/RAPPORTDEMISSION-24-FR.pdf" target="_blank">
                 PDF (version française)
-              {{ else }}
-                PDF (version française)
-              {{ end }}
-            </a>
-            <a href="https://openclassrooms.com/en/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
-              {{ if eq site.LanguageCode "en" }}
+              </a> 
+            {{ end }}
+            {{ if eq site.LanguageCode "en" }}
+              <a href="https://openclassrooms.com/en/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
                 More information about OpenClassrooms
-              {{ else }}
+              </a>
+            {{ else }}
+              <a href="https://openclassrooms.com/fr/?utm_source=missionreport&utm_medium=referral&utm_campaign=referrer_missionreport_oc____no-study-field_230612_00" target="_blank">
                 En savoir plus sur OpenClassooms
-              {{ end }}
-            </a>
+              </a>
+            {{ end }}
           </div>
         </div>
       {{ end }}

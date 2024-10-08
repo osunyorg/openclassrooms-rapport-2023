@@ -3,6 +3,11 @@ h1
   color: #271A38
 b, strong
     font-weight: 600
+a
+    text-decoration: underline
+    text-decoration-thickness: 1px
+    &:hover
+        text-decoration-thickness: 3px
 
 #main
     .document-content
@@ -114,7 +119,6 @@ header#document-header
 //Menu - header
 header#document-header .container
     height: 100%
-    overflow: scroll
 .menu
     -webkit-flex-basis: 100vw
     display: none
@@ -134,7 +138,7 @@ header#document-header .container
                 display: flex
                 justify-content: space-between
                 text-decoration: none
-                @include icon(caret-bottom, after)
+                @include icon(arrow-down-s-line, after)
                     display: block
                 &::after
                     line-height: 1
@@ -162,6 +166,8 @@ header#document-header .container
                 color: #8C79E8 !important
 
 //Common - footer
+footer#document-footer ul li + li
+    margin-top: 0px
 @include media-breakpoint-up(desktop)
     nav
         max-width: 1200px
@@ -170,12 +176,12 @@ header#document-header .container
         gap: 4rem
         > li.menu-block 
             max-width: 256px
-            height: 256px
+            height: 234px
             .menu-block-content
                 .menu-block-title
                     height: 120px
                 img
-                    max-height: 136px
+                    max-height: 114px
                     max-width: 256px
     #document-footer
         padding-left: 4rem
@@ -206,6 +212,12 @@ header#document-header .container
                 img
                     max-height: 88px
                     max-width: 176px
+    .menu
+        .menu-bottom
+            display: block
+            text-align: center
+            a
+                margin-bottom: 0.5rem
     #document-footer
         padding-left: 1rem
         padding-right: 1rem
