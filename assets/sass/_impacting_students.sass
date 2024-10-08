@@ -84,25 +84,26 @@
               text-align: center
               &:first-child
                 border-right: 0.0625rem solid #271A38
-          dl
-            display: flex
-            flex-direction: column-reverse
-            dd 
-              font-size: var(--body-size)
-              font-weight: 400
-              line-height: 100%
-              text-align: center
-              margin-bottom: 2rem
-            dt, dt strong
-              color: #8A76E8
-              font-size: 3rem
-              font-weight: 400
-              line-height: 120%
-              text-transform: uppercase
-              min-width: auto !important
-            dt picture img
-              margin-left: auto
-              margin-right: auto
+              > p
+                display: flex
+                flex-direction: column-reverse
+                min-width: auto !important
+                span:last-child
+                  font-size: var(--body-size)
+                  font-weight: 400
+                  line-height: 100%
+                  text-align: center
+                  margin-bottom: 2rem
+                span:first-child
+                  &, strong
+                    color: #8A76E8
+                    font-size: 3rem
+                    font-weight: 400
+                    line-height: 120%
+                    text-transform: uppercase
+                picture img
+                  margin-left: auto
+                  margin-right: auto
       .block:nth-child(7),
       .block:nth-child(28)
         .block-content
@@ -222,25 +223,25 @@
         display: flex
         ul
           display: block
-          dl
+          li > p
             display: grid
             grid-template-columns: calc(128px + 4rem) repeat(2, 1fr)
             grid-template-rows: repeat(3, 1fr)
-            dt, dt strong
-              color: #8A76E8
-              min-width: auto !important
-              font-size: var(--h2-size)
-              font-weight: 230
-              line-height: 120%
+            span:first-child
+              &, strong
+                color: #8A76E8
+                display: inline-flex
+                grid-column: 1 / 3
+                grid-row: 1 / 3
+                min-width: auto !important
+                font-size: var(--h2-size)
+                font-weight: 230
+                line-height: 120%
             picture
               margin-right: 4rem
               width: 128px
               height: 128px
-            dt 
-              display: inline-flex
-              grid-column: 1 / 3
-              grid-row: 1 / 3
-            dd
+            span:last-child 
               text-transform: uppercase
               grid-column: 2 / 4
               grid-row: 2 / 4
@@ -303,22 +304,24 @@
             text-align: center
             ul.odd-items
               display: block
-              picture
-                height: 147px
-                display: flex
-                margin-bottom: 2rem
-                align-items: flex-end
-                img
-                  margin-left: auto
-                  margin-right: auto
-              dt, dt strong
-                color: #FFF
-                font-size: 3rem
-                font-weight: 400
-                line-height: 120%
-                min-width: auto !important
-              dd
-                margin-top: 0
+              li > p
+                picture
+                  height: 147px
+                  display: flex
+                  margin-bottom: 2rem
+                  align-items: flex-end
+                  img
+                    margin-left: auto
+                    margin-right: auto
+                span:first-child 
+                  &, strong
+                    color: #FFF
+                    font-size: 3rem
+                    font-weight: 400
+                    line-height: 120%
+                    min-width: auto !important
+                span:last-child
+                  margin-top: 0
       .block:nth-child(33)
         margin-left: calc(50% - 1.7rem)
       .block:nth-child(34)
@@ -362,24 +365,26 @@
             li
               padding-top: 2rem
               width: 100%
-              dt, dt strong
-                color: #FFF
-                text-align: center
-                font-size: 3rem
-                font-weight: 400
-                line-height: 120%
-                min-width: auto !important
-              dt strong
-                margin-top: 2rem
-                margin-bottom: 1.7rem
-              picture img
-                margin-left: auto
-                margin-right: auto
-              dd
-                text-align: center
-                border-top: 0.0625rem solid #271A38
-                padding-top: 1rem
-                padding-bottom: 1rem
+              > p
+                span:first-child
+                  &, strong
+                    color: #FFF
+                    text-align: center
+                    font-size: 3rem
+                    font-weight: 400
+                    line-height: 120%
+                    min-width: auto !important
+                    strong
+                      margin-top: 2rem
+                      margin-bottom: 1.7rem
+                picture img
+                  margin-left: auto
+                  margin-right: auto
+                span:last-child
+                  text-align: center
+                  border-top: 0.0625rem solid #271A38
+                  padding-top: 1rem
+                  padding-bottom: 1rem
               &:not(:last-child)
                 border-right: 0.0625rem solid #271A38
     .block:nth-child(36)
@@ -514,9 +519,10 @@
                   border-right: none
               li + li
                 margin-top: 0px
-            dl
-              dt, dt strong
-                font-size: var(--lead-size)
+              > p
+                span:first-child
+                  &, strong
+                    font-size: var(--lead-size)
         .block:nth-child(9)
           margin-top: 2rem
         .block:nth-child(10)
@@ -556,8 +562,10 @@
         .block:nth-child(33)
           .block-content
             ul.odd-items
-              dt, dt strong
-                font-size: var(--lead-size)
+              li > p
+                span:first-child
+                  &, strong
+                    font-size: var(--lead-size)
         .block:nth-child(31)
           padding-top: 2rem
           padding-bottom: 2rem
@@ -596,11 +604,13 @@
               li
                 height: 100%
                 align-content: end
-                dt, dt strong
-                  font-size: var(--lead-size)
-                dt strong
-                  margin-top: 2rem
-                  margin-bottom: 1.7rem
+                > p
+                  span:first-child 
+                    &, strong
+                    font-size: var(--lead-size)
+                    strong
+                      margin-top: 2rem
+                      margin-bottom: 1.7rem
         .block:nth-child(39)
           width: 80%
           padding: 0 0 4rem 0

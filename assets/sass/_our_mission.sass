@@ -53,25 +53,25 @@
         display: flex
         ul
           display: block
-          dl
+          li > p
             display: grid
             grid-template-columns: calc(128px + 4rem) repeat(2, 1fr)
             grid-template-rows: repeat(3, 1fr)
-            dt, dt strong
-              color: #E0474A
-              min-width: auto !important
-              font-size: var(--h2-size)
-              font-weight: 230
-              line-height: 120%
+            span:first-child
+              display: inline-flex
+              grid-column: 1 / 3
+              grid-row: 1 / 3
+              &, strong
+                color: #E0474A
+                min-width: auto !important
+                font-size: var(--h2-size)
+                font-weight: 230
+                line-height: 120%
             picture
               margin-right: 4rem
               width: 128px
               height: 128px
-            dt 
-              display: inline-flex
-              grid-column: 1 / 3
-              grid-row: 1 / 3
-            dd
+            span:last-child
               text-transform: uppercase
               grid-column: 2 / 4
               grid-row: 2 / 4
@@ -245,7 +245,7 @@
         .block:nth-child(7),
         .block:nth-child(12)
           margin-top: 3rem
-        .block-key_figures dl dt + dd
+        .block-key_figures li > p span:last-child
           margin-top: 0px
         .block.block-datatable:nth-child(17)
           display: none
