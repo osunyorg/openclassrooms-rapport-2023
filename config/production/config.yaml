@@ -3,7 +3,7 @@
 baseURL: https://rapport-2023.openclassrooms.osuny.site
 
 ## LANGUAGE
-defaultContentLanguage: en
+defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
 
 ## CACHE
