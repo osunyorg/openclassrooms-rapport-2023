@@ -5,32 +5,40 @@ items:
   target: "/fr/"
   kind: page
   children: []
+  file: content/fr/_index.html
 - title: Our mission
   target: "/fr/our-mission/"
   kind: page
   children: []
+  file: content/fr/pages/our-mission/_index.html
 - title: Impacting students
   target: "/fr/impacting-students/"
   kind: page
   children: []
+  file: content/fr/pages/impacting-students/_index.html
 - title: Impacting employers
   target: "/fr/impacting-employers/"
   kind: page
   children: []
+  file: content/fr/pages/impacting-employers/_index.html
 - title: Impacting our community
   target: "/fr/impacting-our-community/"
   kind: page
   children: []
+  file: content/fr/pages/impacting-our-community/_index.html
 - title: Impacting our planet
   target: "/fr/impacting-our-planet/"
   kind: page
   children: []
+  file: content/fr/pages/impacting-our-planet/_index.html
 - title: Our commitment to progress
   target: "/fr/our-commitment-to-progress/"
   kind: page
   children: []
+  file: content/fr/pages/our-commitment-to-progress/_index.html
 - title: Making Off
   target: "/fr/making-of/"
   kind: page
   children: []
+  file: content/fr/pages/making-of/_index.html
 
