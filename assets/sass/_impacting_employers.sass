@@ -211,13 +211,16 @@
       .blocks
         .block:nth-child(5)
           margin-top: 4rem
-          li
-            margin-bottom: 4rem
-            span
-              &, strong
-                font-size: var(--lead-size)
-              img
-                margin: 0px auto 1rem auto      
+          ul
+            li
+              margin-bottom: 4rem
+              span
+                &, strong
+                  font-size: var(--lead-size)
+                picture
+                  img
+                    max-width: 8rem
+                    margin: 0px auto 1rem auto
         .block:nth-child(6)
           width: 50%
           padding-bottom: 2rem
@@ -233,6 +236,14 @@
             margin-top: 2rem 
         .block:nth-child(11)
           margin-bottom: 3rem
+        .block:nth-child(13)
+          ul 
+            li 
+              span 
+                picture
+                  margin-right: 2rem
+                  img
+                    max-width: 8rem
         .block:nth-child(16),
         .block:nth-child(17)
           width: 80%
