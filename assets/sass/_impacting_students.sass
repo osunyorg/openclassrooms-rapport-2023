@@ -517,12 +517,14 @@
                 padding-top: 2rem
                 &:first-child
                   border-right: none
-              li + li
-                margin-top: 0px
-              > p
-                span:first-child
+                span
                   &, strong
                     font-size: var(--lead-size)
+                  picture
+                    img
+                      max-width: 80%
+              li + li
+                margin-top: 0px                
         .block:nth-child(9)
           margin-top: 2rem
         .block:nth-child(10)
@@ -556,6 +558,14 @@
                 font-size: 1.3rem
         .heading.container:nth-child(17)
           margin-top: 3rem
+        .block:nth-child(20)
+          ul 
+            li 
+              span 
+                picture
+                  margin-right: 2rem
+                  img
+                    max-width: 80%
         .block:nth-child(22)
           margin-bottom: 4rem
         .block:nth-child(32),
@@ -584,6 +594,10 @@
           margin-right: 0px
           border-top: none
           padding-top: 0px
+          li
+            span
+              &, strong
+                font-size: var(--lead-size)
         .block:nth-child(34)
           padding-top: 2rem
           padding-bottom: 2rem
@@ -606,7 +620,7 @@
                 align-content: end
                 span
                   &, strong
-                  font-size: var(--lead-size)
+                    font-size: var(--lead-size)
                   strong
                     margin-top: 2rem
                     margin-bottom: 1.7rem
