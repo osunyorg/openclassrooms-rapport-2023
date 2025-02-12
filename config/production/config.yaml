@@ -2,6 +2,11 @@
 
 baseURL: https://rapport-2023.openclassrooms.osuny.site
 
+## OSUNY
+osuny:
+  website:
+    id: 8f44df20-25e6-4d0c-b43a-af9bd830eabf
+
 ## LANGUAGE
 defaultContentLanguage: fr
 defaultContentLanguageInSubdir: true
