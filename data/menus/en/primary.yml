@@ -2,59 +2,75 @@
 title: Main menu
 items:
 - title: Foreword
+  slug: foreword
   target: "/en/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/"
   file: content/en/_index.html
 - title: Our mission
+  slug: our-mission
   target: "/en/our-mission/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/our-mission"
   file: content/en/pages/our-mission/_index.html
 - title: Impacting students
+  slug: impacting-students
   target: "/en/impacting-students/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/impacting-students"
   file: content/en/pages/impacting-students/_index.html
 - title: Impacting employers
+  slug: impacting-employers
   target: "/en/impacting-employers/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/impacting-employers"
   file: content/en/pages/impacting-employers/_index.html
 - title: Impacting our community
+  slug: impacting-our-community
   target: "/en/impacting-our-community/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/impacting-our-community"
   file: content/en/pages/impacting-our-community/_index.html
 - title: Impacting our planet
+  slug: impacting-our-planet
   target: "/en/impacting-our-planet/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/impacting-our-planet"
   file: content/en/pages/impacting-our-planet/_index.html
 - title: 'Our commitment    to progress'
+  slug: our-commitment-to-progress
   target: "/en/our-commitment-to-progress/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/our-commitment-to-progress"
   file: content/en/pages/our-commitment-to-progress/_index.html
 - title: Making Off
+  slug: making-off
   target: "/en/making-of/"
   kind: page
   new_tab: false
   children: []
+  descendants_targets: []
   path: "/pages/making-of"
   file: content/en/pages/making-of/_index.html
 
